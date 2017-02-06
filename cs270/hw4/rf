@@ -1,0 +1,257 @@
+#!/usr/bin/perl -w
+#
+# Jon Hanson
+# October 31, 2016
+# CS 270
+# Homework 4
+
+# usage
+sub usage
+{
+    my $errmsg = shift;
+    print "error: $errmsg\n\n";
+    print "usage:\n";
+    print "rf -[efilr] <file1> <file2> ...\n\n";
+    print "Round File\n";
+    print " - Move argument files to 'trashcan' directory located at ~/roundfile/\n";
+    print " - Must be run with at least one file or option\n\n";
+    print "Options:\n";
+    print "-e   [e]mpty         delete contents of roundfile/\n";
+    print "-f   [f]lush         delete contents and directory roundfile/\n";
+    print "-i   [i]nteractive   ask user before relocating\n";
+    print "-l   [l]ist          list contents of roundfile/\n";
+    print "-r   [r]etrieve      pull file back from roundfile/\n";
+    exit;
+}
+
+# if no args, throw usage
+usage("nothing to do") if ( $#ARGV < 0 );
+
+# check args
+if ( $ARGV[0] =~ /^(-)\w+/ )
+{
+    usage("invalid opt") unless ( $ARGV[0] =~ /^(-)[efilr]*/ );
+    $eOptFlag = 1 if ( $ARGV[0] =~ /^(-)[efilr]*(e)[efilr]*/ );
+    $fOptFlag = 1 if ( $ARGV[0] =~ /^(-)[efilr]*(f)[efilr]*/ );
+    $iOptFlag = 1 if ( $ARGV[0] =~ /^(-)[efilr]*(i)[efilr]*/ );
+    $lOptFlag = 1 if ( $ARGV[0] =~ /^(-)[efilr]*(l)[efilr]*/ );
+    $rOptFlag = 1 if ( $ARGV[0] =~ /^(-)[efilr]*(r)[efilr]*/ );
+}
+$defaultOperation = 1 unless ($eOptFlag||$fOptFlag||$lOptFlag||$rOptFlag);
+$noOpts = 1 unless ($eOptFlag||$fOptFlag||$iOptFlag||$lOptFlag||$rOptFlag);
+
+
+
+# handle silly cases
+if ( ( $eOptFlag && ($fOptFlag||$lOptFlag||$rOptFlag) ) || ( $fOptFlag && ($lOptFlag||$rOptFlag) ) || ( $iOptFlag && $lOptFlag ) || ( $lOptFlag && $rOptFlag ) )
+{
+    usage("incompatible options selected");
+}
+
+if ( ($eOptFlag||$fOptFlag||$lOptFlag) && $#ARGV > 0 )
+{
+    usage("too many args for given opt");
+}
+
+if ( ( $noOpts && ($#ARGV<0) ) || ( (!$noOpts) && $defaultOperation && ($#ARGV<1) ) )
+{
+    usage("no files specified");
+}
+
+### main ###
+# [e]mpty
+emptyrf() if ($eOptFlag);
+
+# [f]lush
+flushrf() if ($fOptFlag);
+
+# [l]ist
+listrf() if ($lOptFlag);
+
+# [r]etreive
+if ($rOptFlag)
+{
+    foreach $idx (1..$#ARGV)
+    {
+        retrieverf($ARGV[$idx]);
+    }
+    exit;
+}
+
+# default
+if ($defaultOperation)
+{
+    unless ($noOpts)
+    {
+        $minidx = 1;
+    }
+    else
+    {
+        $minidx = 0;
+    }
+
+    foreach $idx ($minidx..$#ARGV)
+    {
+        moverf($ARGV[$idx]);
+    }
+    exit;
+}
+
+sub emptyrf
+{
+    print "emptying roundfile/\n";
+
+    unless (-d $ENV{"HOME"}."/roundfile/")
+    {
+        print "roundfile/ doesn't exist!\n";
+        exit;
+    }
+
+    unless (-e $ENV{"HOME"}."/roundfile/*")
+    {
+        print "roundfile/ already empty!\n";
+        exit;
+    }
+
+    unless ($iOptFlag)
+    {
+        system("rm ~/roundfile/*");
+    }
+    else
+    {
+        system("rm -i ~/roundfile/*");
+    }
+
+    exit;
+}
+
+sub flushrf
+{
+    print "flushing roundfile/\n";
+
+    unless (-d $ENV{"HOME"}."/roundfile/")
+    {
+        print "roundfile/ doesn't exist!\n";
+        exit;
+    }
+
+    unless($iOptFlag)
+    {
+        system("rm -rf ~/roundfile/");
+    }
+    else
+    {
+        system("rm -ri ~/roundfile/");
+    }
+
+    exit;
+}
+
+sub listrf
+{
+    print("listing roundfile/\n");
+
+    unless (-d $ENV{"HOME"}."/roundfile/")
+    {
+        print "roundfile/ doesn't exist!\n";
+        exit;
+    }
+
+    system("ls ~/roundfile/");
+    exit;
+}
+
+sub retrieverf
+{
+    $input = shift;
+    print "retrieving '$input' from roundfile/\n";
+
+    if (-d $ENV{"HOME"}."/roundfile/")
+    {
+        if (-e $ENV{"HOME"}."/roundfile/$input")
+        {
+            unless ($iOptFlag)
+            {
+                system("mv ~/roundfile/$input ./$input");
+            }
+            else
+            {
+                print("really retrieve '$input' from ~/roundfile? (y/N) ");
+                $yesno = <STDIN>;
+                if ($yesno =~ /^(yes|Yes|y|Y)$/)
+                {
+                    system("mv ~/roundfile/$input ./$input");
+                }
+            }
+        }
+        else
+        {
+            usage("'$input' not found in ~/roundfile/");
+        }
+    }
+    else
+    {
+        usage("~/roundfile/ doesn't seem to exist");
+    }
+}
+
+sub moverf
+{
+    $input = shift;
+    print "moving '$input' to roundfile/\n";
+
+    # if given filename doesn't exist, then exit
+    unless (-e $input)
+    {
+        usage("'$input' doesn't exist")
+    }
+
+    # if ~/roundfile/ doesn't exist, then make it
+    unless (-d $ENV{"HOME"}."/roundfile/")
+    {
+        unless ($iOptFlag)
+        {
+            system("mkdir ~/roundfile/");
+        }
+        else
+        {
+            print("really create ~/roundfile? (y/N) ");
+            $yesno = <STDIN>;
+            if ($yesno =~ /^(yes|Yes|y|Y)$/)
+            {
+                system("mkdir ~/roundfile/");
+            }
+        }
+    }
+
+    # if this file already exists, then version the name
+    if (-e $ENV{"HOME"}."/roundfile/$input")
+    {
+        $version = 1;
+        $filename = $input.".$version";
+        while (-e $ENV{"HOME"}."/roundfile/$filename")
+        {
+            $version = $version + 1;
+            $filename = $input.".$version";
+        }
+    }
+    else
+    {
+        $filename = $input;
+    }
+
+    # make the move
+    unless ($iOptFlag)
+    {
+        system("mv ./$input ~/roundfile/$filename");
+    }
+    else
+    {
+        print("really move '$input' to ~/roundfile? (y/N) ");
+        $yesno = <STDIN>;
+        if ($yesno =~ /^(yes|Yes|y|Y)$/)
+        {
+            system("mv ./$input ~/roundfile/$filename");
+        }
+    }
+}

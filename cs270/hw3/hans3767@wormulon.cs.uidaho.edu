@@ -1,0 +1,223 @@
+#!/bin/bash
+#
+# Jonathan Hanson
+# October 10, 2016
+# CS 270
+# Homework 3
+
+
+# function to exit with usage details
+usage()
+{
+    echo "usage:"
+    echo "rf -[efilr] <file1> <file2> ..."
+    echo ""
+    echo "Round File"
+    echo " - Move argument files to 'trashcan' directory"
+    echo "    located at ~/roundfile/"
+    echo " - Must be run with at least one option or file"
+    echo " - Options are mutually exclusive"
+    echo ""
+    echo "Options:"
+    echo " -e   [e]mpty         delete contents of roundfile/"
+    echo " -f   [f]lush         delete contents and directory roundfile/"
+    echo " -i   [i]nteractive   ask user before relocation to roundfile/"
+    echo " -l   [l]ist          list contents of roundfile/"
+    echo " -r   [r]etrieve      pull file back from roundfile/"
+    exit 1
+}
+
+# if no args, bail
+if [ "$#" -eq "0" ]
+then
+    usage
+fi
+
+# parse out args
+optcount=0
+optval=""
+while getopts ":efilr" opt; do
+    case $opt in
+        e)
+            #echo "opt e"
+            optval="e"
+            ((optcount++))
+            ;;
+        f)
+            #echo "opt f"
+            optval="f"
+            ((optcount++))
+            ;;
+        i)
+            #echo "opt i"
+            optval="i"
+            ((optcount++))
+            ;;
+        l)
+            #echo "opt l"
+            optval="l"
+            ((optcount++))
+            ;;
+        r)
+            #echo "opt r"
+            optval="r"
+            ((optcount++))
+            ;;
+        \?) usage
+            ;;
+    esac
+done
+
+# if multiple opts, bail
+if [ "$optcount" -gt "1" ]
+then
+    usage
+fi
+
+
+filecount=$(($#-$optcount))
+#echo $filecount
+
+## Opt Cases ##
+
+# if [e]mpty
+if [ "$optval" = "e" ]
+then
+    echo "Emptying ~/roundfile/"
+    if [ -a ~/roundfile/ ]
+    then
+        rm ~/roundfile/*
+    else
+        echo "~/roundfile/ doesn't seem to exist"
+    fi
+    exit 1
+fi
+
+# if [f]lush
+if [ "$optval" = "f" ]
+then
+    echo "Flushing ~/roundfile/"
+    if [ -a ~/roundfile/ ]
+    then
+        rm -r ~/roundfile/
+    else
+        echo "~/roundfile/ doesn't seem to exist"
+    fi
+    exit 1
+fi
+
+# if [i]ntercative
+if [ "$optval" = "i" ]
+then
+    echo "Running interactively"
+fi
+
+# if [l]ist
+if [ "$optval" = "l" ]
+then
+    echo "Listing contents of roundfile:"
+    if [ -a ~/roundfile/ ]
+    then
+        ls ~/roundfile/
+    else
+        echo "~/roundfile/ doesn't seem to exist"
+    fi
+    exit 1
+fi
+
+# if [r]estore
+if [ "$optval" = "r" ]
+then
+    echo "Restoring from roundfile"
+    if [ -a ~/roundfile/ ]
+    then
+        for file in ${@:2}
+        do
+            if [ -a ~/roundfile/$file ]
+            then
+                mv ~/roundfile/$file ./$file
+            else
+                echo "'$file' not found"
+            fi
+        done
+    else
+        echo "~/roundfile/ doesn't seem to exist"
+    fi
+    exit 1
+fi
+
+
+## Default Case ##
+
+# check if roundfile/ exists
+if [ -a ~/roundfile/ ]
+then
+    touch ~/roundfile/
+else
+    # if interactive
+    if [ "$optval" = "i" ]
+    then
+        echo "~/roundfile/ doesn't exist: create it? (y/n)"
+        read yesno
+        if [ $yesno = "y" ]
+        then
+            mkdir ~/roundfile
+        fi
+    # else not interactive
+    else
+        mkdir ~/roundfile
+    fi
+fi
+
+
+# iterate through args
+# no options
+if [ "$optcount" -eq "0" ]
+then
+    for file in ${@:1}
+    do
+        if [ -a $file ]
+        then
+            # if interactive
+            if [ "$optval" = "i" ]
+            then
+                echo "Really move '$file' to ~/roundfile/? (y/n)"
+                read yesno
+                if [ $yesno = "y" ]
+                then
+                    mv $file ~/roundfile/$file
+                fi
+            # else not interactive
+            else
+                mv $file ~/roundfile/$file
+            fi
+        # else file didn't exist
+        else
+            echo "'$file' not found"
+        fi
+    done
+# else there was an option
+else
+    for file in ${@:2}
+    do
+        if [ -a $file ]
+        then
+            # if interactive
+            if [ "$optval" = "i" ]
+            then
+                echo "Really move '$file' to ~/roundfile/? (y/n)"
+                read yesno
+                if [ $yesno = "y" ]
+                then
+                    mv $file ~/roundfile/$file
+                fi
+            # else not interactive
+            else
+                mv $file ~/roundfile/$file
+            fi
+        # else file didn't exist
+        else
+            echo "'$file' not found"
+        fi
+    done
+fi

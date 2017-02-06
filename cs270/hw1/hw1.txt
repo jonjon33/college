@@ -1,0 +1,121 @@
+Jonathan Hanson
+Sept 14, 2016
+CS 270
+Homework 1
+
+** Problem Statement **
+Write a C program that inputs an array, and sorts it using three different
+methods - the bubble sort, the insertion sort and the quick sort. Write these
+three as separate subroutines, and place each of them (as well as main) in their
+own file. Make the array global (to make it more visible in the ELF file.)
+
+Compile this test program (using Linux) and generate the memory map for each
+separate function, and for the complete executable. Determine the following:
+ - The size of each function, in decimal
+ - The address where each function is loaded into memory
+ - The name and location of the entry point for the entire program
+ - The locations and names of any subroutines from stdio or iostream that are
+     linked with your file
+ - The locations and sizes of the data sections used by your program
+
+Secondly, recompile your functions using the -O (“minus-oh,” or optimize)
+option, then answer the same questions as above.
+
+
+
+** General Notes **
+I have written my files in C (not C++). I have created a file for main, a file
+for each of the sorting methods, and a file to contain the 'utilities' that
+populate the array with random data to sort and that print the array's contents
+to the console.
+
+The directory contents are as follows:
+ - bin/         executables
+ - hw1.txt      this file
+ - ofiles/      .o files
+ - readfiles/   output from readelf -a for each file (.txt files)
+ - src/         .c files
+
+My solutions have been read directly from the readelf output files. When
+relevant, I have provided information about where in the file the data was
+found.
+
+Addresses are space-separated for readability and always in hex.  For raw
+numbers (e.g. sizes) assume numbers are in decimal unless '0x' is prepended.
+
+
+
+** Solution **
+Part 1: Normal Compilation (gcc)
+ - binary:          1.out
+ - readelf output:  1out.txt
+
+ - Size of Each Function (found in '.symtab')
+   - main()             191 Bytes   (1out #74)
+   - bubbleSort()       188 Bytes   (1out #68, bubble1 #8)
+   - insertionSort()    173 Bytes   (1out #51, insertion1 #8)
+   - quickSort()        665 Bytes   (1out #64, quick1 #8)
+   - Bonus
+     - fillArray()      105 Bytes   (1out #55, utils1 #9)
+     - printArray()     84 Bytes    (1out #69, utils1 #11)
+
+ - Address of Each Function (found in '.symtab')
+   - main()             0000 0000 0040 0554    (1out #74)
+   - bubbleSort()       0000 0000 0040 0614    (1out #68)
+   - insertionSort()    0000 0000 0040 06d0    (1out #51)
+   - quickSort()        0000 0000 0040 0780    (1out #64)
+   - Bonus
+     - fillArray()      0000 0000 0040 0a1c    (1out #55)
+     - printArray()     0000 0000 0040 0a85    (1out #69)
+
+ - Location and Name of Entry Point for Program (found in 'ELF Header')
+   - Location:  0000 0000 0040 0470     (given as 'Entry point address')
+   - Name:      _start                  (found in .symtab at given address)
+
+ - Locations and Names of Subroutines from stdio.h (found in '.rela.pit')
+   - printf()   0000 0000 0060 0f30
+   - putchar()  0000 0000 0060 0f38     (I didn't use this, so printf must!)
+   - rand()     0000 0000 0060 0f48
+
+ - Locations and Sizes of Data Sections (found in 'Section Headers')
+   - .data       0000 0000 0060 0f50     0x04 (dec 4) Bytes
+   - .bss        0000 0000 0060 0f54     0x60 (dec 96) Bytes
+   - .rodata     0000 0000 0040 0bc8     0x14 (dec 20) Bytes
+
+
+
+Part 2: Optimized Compilation (gcc -O)
+- binary:          2.out
+- readelf output:  2out.txt
+
+- Size of Each Function (found in '.symtab')
+  - main()             194 Bytes   (2out #74)
+  - bubbleSort()       81 Bytes    (2out #68, bubble2 #8)
+  - insertionSort()    92 Bytes    (2out #51, insertion2 #8)
+  - quickSort()        401 Bytes   (2out #64, quick2 #8)
+  - Bonus
+    - fillArray()      84 Bytes    (2out #55, utils2 #11)
+    - printArray()     63 Bytes    (2out #69, utils2 #9)
+
+- Address of Each Function (found in '.symtab')
+  - main()             0000 0000 0040 0554    (2out #74)
+  - bubbleSort()       0000 0000 0040 0618    (2out #68)
+  - insertionSort()    0000 0000 0040 066c    (2out #51)
+  - quickSort()        0000 0000 0040 07d0    (2out #64)
+  - Bonus
+    - fillArray()      0000 0000 0040 08a3    (2out #55)
+    - printArray()     0000 0000 0040 0864    (2out #69)
+
+- Location and Name of Entry Point for Program (found in 'ELF Header')
+  - Location:  0000 0000 0040 0470     (given as 'Entry point address')
+  - Name:      _start                  (found in .symtab at given address)
+
+- Locations and Names of Subroutines from stdio.h (found in '.rela.pit')
+  - printf()   0000 0000 0060 0d60
+  - putchar()  0000 0000 0060 0d68     (I didn't use this, so printf must!)
+  - rand()     0000 0000 0060 0d78
+
+- Locations and Sizes of Data Sections (found in 'Section Headers')
+  - .data       0000 0000 0060 0d80     0x04 (dec 4) Bytes
+  - .bss        0000 0000 0060 0da0     0x60 (dec 96) Bytes
+  - .rodata     0000 0000 0040 09e8     0x14 (dec 20) Bytes
