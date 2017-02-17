@@ -254,8 +254,8 @@ end (keyword)
 head (identifier)
 ; (operator)
 /*
-* This routine performs a prefix insertion of an el with data x.
-*/ (comment)
+ * This routine performs a prefix insertion of an el with data x.
+ */ (comment)
 mutator (keyword)
 insert (identifier)
 ( (operator)

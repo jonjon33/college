@@ -1,9 +1,11 @@
 import subprocess
 
-filename = "samp1.ccx"
-filelist = [ "complex.cci" , "complex.ccx" , "date.cci" , "date.ccx" , "hello_world.ccx" , "list.cci" , "list.ccx" , "natural.cci" , "natural.ccx" , "samp1.ccx" , "samp2.ccx" , "samp3.ccx" , "widget.cci" , "widget.ccx" ]
+filelist = [ "complex.cci" , "complex.ccx" , "date.cci" , "date.ccx" , "hello_world.ccx" , "list.cci" , "list.ccx" , "natural.cci" , "natural.ccx" , "widget.cci" , "widget.ccx" ]
+
+filelist2 = [ "complex.cci" , "complex.ccx" , "date.cci" , "date.ccx" , "hello_world.ccx" , "list.cci" , "list.ccx" , "natural.cci" , "natural.ccx" , "samp1.ccx" , "samp2.ccx" , "samp3.ccx" , "widget.cci" , "widget.ccx" ]
 
 for filename in filelist:
+    print "\nApplying lexer to: "+filename
     args = ( "../bin/hw1" , "ccxSamples/"+filename )
     proc = subprocess.Popen(args,stdout=subprocess.PIPE)
     proc.wait()

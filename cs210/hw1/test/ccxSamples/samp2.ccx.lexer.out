@@ -16,8 +16,8 @@ is (keyword)
 natural (keyword)
 ; (operator)
 /*
-* routines
-*/ (comment)
+ * routines
+ */ (comment)
 mutator (keyword)
 append (identifier)
 ( (operator)

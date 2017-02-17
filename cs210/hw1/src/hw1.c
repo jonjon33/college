@@ -5,7 +5,7 @@
 // Homework 1 - CCX Lexer
 
 // To Do
-// - global list length func?
+// - Nothing, you're perfect <3
 
 
 // includes
@@ -97,6 +97,7 @@ int main( int argc , char* argv[] )
 }
 
 //
+// function: void parseLexeme( char , lexerState* , char* )
 //
 void parseLexeme( char ch , lexerState *lex , char *hist )
 {
@@ -116,18 +117,15 @@ void parseLexeme( char ch , lexerState *lex , char *hist )
         // first char switch
         switch( ch )
         {
-        // " is guaranteed string
-        case '\"':
+        case '\"': // " is guaranteed string
             *lex = LEX_STR;
             return;
 
-        // ' is guaranteed char
-        case '\'':
+        case '\'': // ' is guaranteed char
             *lex = LEX_CHAR;
             return;
 
-        // handle ranges, bad input in default
-        default:
+        default: // handle ranges, bad input
             // number is guaranteed num
             if( ch >= '0' && ch <= '9' )
             {
@@ -272,7 +270,7 @@ void parseLexeme( char ch , lexerState *lex , char *hist )
         if( ch == '\'' )
         {
             // found a character literal!
-            printf("%s (character literal)\n",hist);
+            printf("%s (char literal)\n",hist);
             *lex = LEX_FRESH;
             return;
         }
