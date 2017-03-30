@@ -23,7 +23,7 @@
      */
 DIGIT    [0-9]
 HEXD     [A-Fa-f]
-ID       [a-z][_a-z0-9]*
+ID       [a-zA-Z][_a-z0-9]*
 NUMLIT   [0-9][0-9a-fA-F_.#]*
 %%
     /*
@@ -44,7 +44,7 @@ NUMLIT   [0-9][0-9a-fA-F_.#]*
      *
      * Please see http://flex.sourceforge.net for further details.
      */
-"/*".*"*/" {
+"/*"(([^*])|(\*+[^/]))*"*/" {
   printf( "%s (comment)\n" , yytext );
   }
 
@@ -53,11 +53,11 @@ NUMLIT   [0-9][0-9a-fA-F_.#]*
   }
 
 \'.*\' {
-  printf( "%s (char-lit)\n" , yytext );
+  printf( "%s (char literal)\n" , yytext );
   }
 
 {NUMLIT} {
-  printf("%s (num-lit)\n", yytext);
+  printf("%s (numeric literal)\n", yytext);
   }
 
 accessor |
@@ -79,6 +79,13 @@ is |
 loop |
 module |
 mutator |
+natural |
+null |
+of |
+or |
+others |
+out |
+positive |
 procedure |
 return |
 struct |
@@ -102,7 +109,7 @@ while {
 "+" |
 "-" |
 "*" |
-"/" |
+  /*"/" |*/
 "|" |
 "&" |
 ";" |
