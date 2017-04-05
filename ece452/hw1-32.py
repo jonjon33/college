@@ -23,11 +23,11 @@ for M in range(2):
     w = np.random.normal(0,1,t.size)
 
     s = A * np.cos( 2*pi*fc*t + Phi) + w
-    s = np.cos(2*pi*fc*t)
+    #s = np.cos(2*pi*fc*t)
 
     plt.plot(t,s)
     plt.show()
-    
+
     S = fft(s)
 
     plt.plot(f,S)
