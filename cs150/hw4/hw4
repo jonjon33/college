@@ -1,0 +1,48 @@
+; Jonathan Hanson
+; CS 150 Hw 4
+;
+; To my great dismay, this code does not function fully.  When run,
+;  this program turns the LED off for one second, then turns the
+;  LED on, then it hangs as on.  Rather than doing the smart thing
+;  and creating a dumb counter that counts out 16M cycles for
+;  me, I continued to beat my head against the darn 16-bit timer.
+;  I was just so close!  Hopefully I've displayed a reasonable
+;  understanding of how to approach the task at hand despite my
+;  failure.  I expect that I'm unfamiliar with some aspect of 
+;  "reseting" the timer so it will trigger flags again.  Which is
+;  quite frustrating and makes me wish I had tried the easier
+;  method first.  Live and learn, I suppose.
+;
+; setup
+1110000000000000 ; ldi r16 #0x00 Zero
+1110001000010000 ; ldi r17 #0x20 Port Mask
+1110000000100000 ; ldi r18 #0x00 holder for flags
+1110001101001101 ; ldi r20 #0x3d Hi time comp val
+1110000001011001 ; ldi r21 #0x09 Lo time comp val
+1110000001100101 ; ldi r22 #0x05 tccr1b val (prescaler)
+10010011000100000000000000100100 ; sts $0x24, r17 store port mask at ddr
+10010011010000000000000010001001 ; sts $0x89, r20 store hi time comp val
+10010011010100000000000010001000 ; sts $0x88, r21 store lo time comp val
+10010011000000000000000010000000 ; sts $0x80, r16 tccr1a
+10010011011000000000000010000001 ; sts $0x81, r22 tccr1b set prescalar
+10010011000000000000000010000010 ; sts $0x82, r16 tccr1c
+; loop
+0010011100100010 ; eor r18, r18 zero holder for flags
+10010011000000000000000000110110 ; sts $0x36, r16 zero time flags
+10010011000000000000000010000101 ; sts $0x85, r16 zero hi time
+10010011000000000000000010000100 ; sts $0x84, r16 zero lo time
+10010011000000000000000000100101 ; sts $0x25, r16 set port LO
+10010001001000000000000000110110 ; lds r18, $0x36 load new reg with flags
+0111000000100010 ; andi r18, #0x02
+0011000000100010 ; cpi r18, #0x02 cp flag for bit 1
+1111011111011001 ; brbc 1, -5 cycle until match
+0010011100100010 ; eor r18, r18 zero holder for flags
+10010011000000000000000000110110 ; sts $0x36, r16 zero time flags
+10010011000000000000000010000101 ; sts $0x85, r16 zero hi time
+10010011000000000000000010000100 ; sts $0x84, r16 zero lo time
+10010011000100000000000000100101 ; sts $0x25, r17 set port HI
+10010001001000000000000000110110 ; lds r18, $0x36 load new reg with flags
+0111000000100010 ; andi r18, #0x02
+0011000000100010 ; cpi r18, #0x02 cp flag for bit 1
+1111011111011001 ; brbc 1, -5 cycle until match
+10010100000011000000000000010010 ; jmp to start of loop

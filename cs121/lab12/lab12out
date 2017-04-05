@@ -1,0 +1,119 @@
+Script started on Fri 12 Dec 2014 01:45:31 AM PST
+[?1034hbash-4.1$ ./merge
+Merge Sort Statistics
+
+Data Set: 100 Random Values
+Comparisons processed: 540
+      Swaps processed: 0
+
+Data Set: 100 Low to High Values
+Comparisons processed: 356
+      Swaps processed: 0
+
+Data Set: 100 High to Low Values
+Comparisons processed: 316
+      Swaps processed: 0
+
+Data Set: 1000 Random Values
+Comparisons processed: 8716
+      Swaps processed: 0
+
+Data Set: 1000 Low to High Values
+Comparisons processed: 5044
+      Swaps processed: 0
+
+Data Set: 1000 High to Low Values
+Comparisons processed: 4932
+      Swaps processed: 0
+
+Data Set: 10000 Random Values
+Comparisons processed: 120416
+      Swaps processed: 0
+
+Data Set: 10000 Low to High Values
+Comparisons processed: 69008
+      Swaps processed: 0
+
+Data Set: 10000 High to Low Values
+Comparisons processed: 64608
+      Swaps processed: 0
+bash-4.1$ ./quick
+Quick Sort Statistics
+
+Data Set: 100 Random Values
+Comparisons processed: 824
+      Swaps processed: 494
+
+Data Set: 100 Low to High Values
+Comparisons processed: 4950
+      Swaps processed: 99
+
+Data Set: 100 High to Low Values
+Comparisons processed: 4950
+      Swaps processed: 2599
+
+Data Set: 1000 Random Values
+Comparisons processed: 11075
+      Swaps processed: 6105
+
+Data Set: 1000 Low to High Values
+Comparisons processed: 499500
+      Swaps processed: 999
+
+Data Set: 1000 High to Low Values
+Comparisons processed: 499500
+      Swaps processed: 250999
+
+Data Set: 10000 Random Values
+Comparisons processed: 178188
+      Swaps processed: 93733
+
+Data Set: 10000 Low to High Values
+Comparisons processed: 49995000
+      Swaps processed: 9999
+
+Data Set: 10000 High to Low Values
+Comparisons processed: 49995000
+      Swaps processed: 25009999
+bash-4.1$ ./select
+Selection Sort Statistics
+
+Data Set: 100 Random Values
+Comparisons processed: 5050
+      Swaps processed: 100
+
+Data Set: 100 Low to High Values
+Comparisons processed: 5050
+      Swaps processed: 100
+
+Data Set: 100 High to Low Values
+Comparisons processed: 5050
+      Swaps processed: 100
+
+Data Set: 1000 Random Values
+Comparisons processed: 500500
+      Swaps processed: 1000
+
+Data Set: 1000 Low to High Values
+Comparisons processed: 500500
+      Swaps processed: 1000
+
+Data Set: 1000 High to Low Values
+Comparisons processed: 500500
+      Swaps processed: 1000
+
+Data Set: 10000 Random Values
+Comparisons processed: 50005000
+      Swaps processed: 10000
+
+Data Set: 10000 Low to High Values
+Comparisons processed: 50005000
+      Swaps processed: 10000
+
+Data Set: 10000 High to Low Values
+Comparisons processed: 50005000
+      Swaps processed: 10000
+bash-4.1$ exit
+exit
+
+Script done on Fri 12 Dec 2014 01:45:53 AM PST

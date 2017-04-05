@@ -1,0 +1,87 @@
+Script started on Tue 01 Oct 2013 05:07:04 PM PDT
+[?1034hbash-4.1$ ./guessfuc[Knc.out
+
+
+ + - + - + - Guess my Number! - + - + - + 
+
+Guess my Number is a simple guessing game.
+I'll think of a random integer between one and
+whichever number you choose, and you'll try to
+guess it.
+
+What is the highest number I can choose? -0 10
+
+That input won't work, try again: 0
+
+That input won't work, try again: 100
+
+I've got my number.
+
+Enter your guess: 50
+Too low.
+
+Enter your guess: 75
+Too high.
+
+Enter your guess: 66
+Too high.
+
+Enter your guess: 60
+Too high.
+
+Enter your guess: 55
+Too low.
+
+Enter your guess: 57
+Too low.
+
+Enter your guess: 58
+Too low.
+
+Enter your guess: 59
+
+Congratulations, you've guessed the number!
+It took you 8 guesses.
+You've won 1 game.
+Would you like to play again? (y/n): y
+
+
+ + - + - + - Guess my Number! - + - + - + 
+
+Guess my Number is a simple guessing game.
+I'll think of a random integer between one and
+whichever number you choose, and you'll try to
+guess it.
+
+What is the highest number I can choose? 50
+
+I've got my number.
+
+Enter your guess: 25
+Too high.
+
+Enter your guess: 17
+Too high.
+
+Enter your guess: 10
+Too high.
+
+Enter your guess: 5
+Too low.
+
+Enter your guess: 8
+Too low.
+
+Enter your guess: 9
+
+Congratulations, you've guessed the number!
+It took you 6 guesses.
+You've won 2 games.
+Would you like to play again? (y/n): n
+
+Goodbye!
+
+bash-4.1$ exit
+exit
+
+Script done on Tue 01 Oct 2013 05:08:52 PM PDT

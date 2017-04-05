@@ -1,0 +1,38 @@
+Jonathan Hanson
+Oct 9, 2014
+CS 121
+Lab #5 Programming Log
+
+Objective:
+Gain an introductory understanding of the construction and
+implementation of Makefiles.
+
+Questions:
+Invoke make testStack:
+ a. What files are compiled?
+     stack.cpp, list.cpp, and testStack.cpp
+
+ b. What is the last argument?
+     The last argument on the last line of the makefile’s output is the
+     link.o file.  This object file was created earlier in the make
+     process and is used here to compile the testStack executable file.
+
+Invoke make clean:
+ a. What happened?
+     The executable file and object files were removed.
+
+Log:
+This lab did not require difficult design considerations.  Code was
+aquired from Bolden's site for the make file and the target files
+without any problems.  The two parts of the lab (making the stack
+and making the queue) were kept in separate directories for
+simplicity.
+
+Changing from compiling testStack to compiling testQueue only
+required changing references to file names in the makefile.  The
+structure and details are left exactly the same.
+
+-Issue: Errors compiling the Queue code from Bolden's website
+  - using namespace std required for each file
+  - #include<bool> is not a valid include
+  - Filenames must be consistantly capitalized across usage

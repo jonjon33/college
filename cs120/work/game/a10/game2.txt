@@ -1,0 +1,6 @@
+16 -2 ? Slide in an oil slick, go back 2 squares.
+8 +1 * Great shift! You move ahead 1 square.
+26 +1 * Great shift! You move ahead 1 square.
+22 0 @ Engine stalls, lose a turn.
+4 0 > You hit the boosters, roll again.
+14 0 # A hidden teleporter sends you to a random square!

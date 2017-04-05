@@ -1,0 +1,358 @@
+Script started on Thu 07 Nov 2013 10:48:39 PM PST
+[?1034hbash-4.1$ exit./game.out
+
+
+Game Master 9000
+
+Choose your game:
+ 1) Crew Racer II
+ 2) Dragster Challenge
+1
+
+
+Crew Racer II
+
+In Crew Racer II, player 1 controls the American
+Olympic Crew Team and player 2 controls the Canadian
+Olympic Crew Team as they compete for gold. Each
+player rolls to see how far his or her team rows on a
+given turn. The first player to reach the goal wins.
+
+Special Squares:
+ ? Row backward to let ducklings cross, go back 2 squares
+ * A tailwind blows you forward, advance 1 square
+ @ Stuck in a whirlpool, lose a turn
+ > Rhythmic chanting distracts opponents, roll again
+ # Wind gust blows you to a random square
+
+What sets this game appart is the momentum characteristic.
+Momentum increases each turn and is added to a player's roll.
+If the player hits a trouble square (#,@, or ?) though, his
+or her momentum is reset to zero.
+
+Player 1, what is your name? Free d
+Player 2, what is your name? Bob
+
+Welcome Fred and Bob!
+
+Fred, type a character for your marker on the board: F
+Bob, type a character for your marker on the board: B
+
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -|-
+|F| | | |>| | | |*| | | | | |#| |?| | | | | |@| | | |*| | | | | | | | | 
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -|Goal
+|B| | | |>| | | |*| | | | | |#| |?| | | | | |@| | | |*| | | | | | | | | 
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -|-
+
+Fred, type enter to roll.
+Fred rolled a 3 ( + momentum of 0).
+
+
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -|-
+| | | |F|>| | | |*| | | | | |#| |?| | | | | |@| | | |*| | | | | | | | | 
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -|Goal
+|B| | | |>| | | |*| | | | | |#| |?| | | | | |@| | | |*| | | | | | | | | 
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -|-
+
+Bob, type enter to roll.
+Bob rolled a 5 ( + momentum of 0).
+
+
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -|-
+| | | |F|>| | | |*| | | | | |#| |?| | | | | |@| | | |*| | | | | | | | | 
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -|Goal
+| | | | |>|B| | |*| | | | | |#| |?| | | | | |@| | | |*| | | | | | | | | 
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -|-
+
+Fred, type enter to roll.
+Fred rolled a 2 ( + momentum of 1).
+
+
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -|-
+| | | | |>| |F| |*| | | | | |#| |?| | | | | |@| | | |*| | | | | | | | | 
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -|Goal
+| | | | |>|B| | |*| | | | | |#| |?| | | | | |@| | | |*| | | | | | | | | 
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -|-
+
+Bob, type enter to roll.
+Bob rolled a 2 ( + momentum of 1).
+ A tailwind blows you ahead 1 square.
+
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -|-
+| | | | |>| |F| |*| | | | | |#| |?| | | | | |@| | | |*| | | | | | | | | 
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -|Goal
+| | | | |>| | | |*|B| | | | |#| |?| | | | | |@| | | |*| | | | | | | | | 
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -|-
+
+Fred, type enter to roll.
+Fred rolled a 3 ( + momentum of 2).
+
+
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -|-
+| | | | |>| | | |*| | |F| | |#| |?| | | | | |@| | | |*| | | | | | | | | 
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -|Goal
+| | | | |>| | | |*|B| | | | |#| |?| | | | | |@| | | |*| | | | | | | | | 
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -|-
+
+Bob, type enter to roll.
+Bob rolled a 2 ( + momentum of 2).
+
+
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -|-
+| | | | |>| | | |*| | |F| | |#| |?| | | | | |@| | | |*| | | | | | | | | 
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -|Goal
+| | | | |>| | | |*| | | | |B|#| |?| | | | | |@| | | |*| | | | | | | | | 
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -|-
+
+Fred, type enter to roll.
+Fred rolled a 3 ( + momentum of 3).
+
+
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -|-
+| | | | |>| | | |*| | | | | |#| |?|F| | | | |@| | | |*| | | | | | | | | 
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -|Goal
+| | | | |>| | | |*| | | | |B|#| |?| | | | | |@| | | |*| | | | | | | | | 
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -|-
+
+Bob, type enter to roll.
+Bob rolled a 2 ( + momentum of 3).
+
+
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -|-
+| | | | |>| | | |*| | | | | |#| |?|F| | | | |@| | | |*| | | | | | | | | 
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -|Goal
+| | | | |>| | | |*| | | | | |#| |?| |B| | | |@| | | |*| | | | | | | | | 
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -|-
+
+Fred, type enter to roll.
+Fred rolled a 1 ( + momentum of 4).
+ Stuck in a whirlpool, lose a turn.
+
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -|-
+| | | | |>| | | |*| | | | | |#| |?| | | | | |F| | | |*| | | | | | | | | 
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -|Goal
+| | | | |>| | | |*| | | | | |#| |?| |B| | | |@| | | |*| | | | | | | | | 
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -|-
+
+Bob, type enter to roll.
+Bob rolled a 1 ( + momentum of 4).
+
+
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -|-
+| | | | |>| | | |*| | | | | |#| |?| | | | | |F| | | |*| | | | | | | | | 
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -|Goal
+| | | | |>| | | |*| | | | | |#| |?| | | | | |@|B| | |*| | | | | | | | | 
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -|-
+
+Bob, type enter to roll.
+Bob rolled a 2 ( + momentum of 5).
+
+
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -|-
+| | | | |>| | | |*| | | | | |#| |?| | | | | |F| | | |*| | | | | | | | | 
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -|Goal
+| | | | |>| | | |*| | | | | |#| |?| | | | | |@| | | |*| | | |B| | | | | 
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -|-
+
+Fred, type enter to roll.
+Fred rolled a 3 ( + momentum of 0).
+
+
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -|-
+| | | | |>| | | |*| | | | | |#| |?| | | | | |@| | |F|*| | | | | | | | | 
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -|Goal
+| | | | |>| | | |*| | | | | |#| |?| | | | | |@| | | |*| | | |B| | | | | 
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -|-
+
+Bob, type enter to roll.
+Bob rolled a 3 ( + momentum of 6).
+
+
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -|-
+| | | | |>| | | |*| | | | | |#| |?| | | | | |@| | |F|*| | | | | | | | | 
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -|Goal
+| | | | |>| | | |*| | | | | |#| |?| | | | | |@| | | |*| | | | | | | | |B
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -|-
+
+Bob Wins!!!
+
+bash-4.1$ ./game.out
+
+
+Game Master 9000
+
+Choose your game:
+ 1) Crew Racer II
+ 2) Dragster Challenge
+2
+
+
+Dragster Challenge
+
+In Dragster Challenge, the players control state-of-
+the-art supercars and race them down a track. Each
+player rolls to see how fast his or her car drives on
+a given turn. The first player to reach the goal wins.
+
+Special Squares:
+ ? Slide on an oil slick, go back 2 squares
+ * An efficient gear shift helps you forward, advance 1 square
+ @ Engine stalls, lose a turn
+ > You hit the boosters, roll again
+ # A hidden teleporter sends you to a random square
+
+What sets this game appart is the momentum characteristic.
+Momentum increases each turn and is added to a player's roll.
+If the player hits a trouble square (#,@, or ?) though, his
+or her momentum is reset to zero.
+
+Player 1, what is your name? Fred  
+Player 2, what is your name? Jane
+
+Welcome Fred and Jane!
+
+Fred, type a character for your marker on the board: F
+Jane, type a character for your marker on the board: J
+
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -|-
+|F| | | |>| | | |*| | | | | |#| |?| | | | | |@| | | |*| | | | | | | | | 
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -|Goal
+|J| | | |>| | | |*| | | | | |#| |?| | | | | |@| | | |*| | | | | | | | | 
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -|-
+
+Fred, type enter to roll.
+Fred rolled a 1 ( + momentum of 0).
+
+
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -|-
+| |F| | |>| | | |*| | | | | |#| |?| | | | | |@| | | |*| | | | | | | | | 
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -|Goal
+|J| | | |>| | | |*| | | | | |#| |?| | | | | |@| | | |*| | | | | | | | | 
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -|-
+
+Jane, type enter to roll.
+Jane rolled a 4 ( + momentum of 0).
+ You hit the boosters, roll again.
+
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -|-
+| |F| | |>| | | |*| | | | | |#| |?| | | | | |@| | | |*| | | | | | | | | 
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -|Goal
+| | | | |J| | | |*| | | | | |#| |?| | | | | |@| | | |*| | | | | | | | | 
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -|-
+
+Jane, type enter to roll.
+Jane rolled a 3 ( + momentum of 1).
+ Great shift! You move ahead 1 square.
+
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -|-
+| |F| | |>| | | |*| | | | | |#| |?| | | | | |@| | | |*| | | | | | | | | 
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -|Goal
+| | | | |>| | | |*|J| | | | |#| |?| | | | | |@| | | |*| | | | | | | | | 
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -|-
+
+Fred, type enter to roll.
+Fred rolled a 5 ( + momentum of 1).
+
+
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -|-
+| | | | |>| | |F|*| | | | | |#| |?| | | | | |@| | | |*| | | | | | | | | 
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -|Goal
+| | | | |>| | | |*|J| | | | |#| |?| | | | | |@| | | |*| | | | | | | | | 
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -|-
+
+Jane, type enter to roll.
+Jane rolled a 2 ( + momentum of 2).
+
+
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -|-
+| | | | |>| | |F|*| | | | | |#| |?| | | | | |@| | | |*| | | | | | | | | 
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -|Goal
+| | | | |>| | | |*| | | | |J|#| |?| | | | | |@| | | |*| | | | | | | | | 
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -|-
+
+Fred, type enter to roll.
+Fred rolled a 2 ( + momentum of 2).
+
+
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -|-
+| | | | |>| | | |*| | |F| | |#| |?| | | | | |@| | | |*| | | | | | | | | 
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -|Goal
+| | | | |>| | | |*| | | | |J|#| |?| | | | | |@| | | |*| | | | | | | | | 
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -|-
+
+Jane, type enter to roll.
+Jane rolled a 1 ( + momentum of 3).
+
+
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -|-
+| | | | |>| | | |*| | |F| | |#| |?| | | | | |@| | | |*| | | | | | | | | 
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -|Goal
+| | | | |>| | | |*| | | | | |#| |?|J| | | | |@| | | |*| | | | | | | | | 
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -|-
+
+Fred, type enter to roll.
+Fred rolled a 1 ( + momentum of 3).
+
+
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -|-
+| | | | |>| | | |*| | | | | |#|F|?| | | | | |@| | | |*| | | | | | | | | 
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -|Goal
+| | | | |>| | | |*| | | | | |#| |?|J| | | | |@| | | |*| | | | | | | | | 
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -|-
+
+Jane, type enter to roll.
+Jane rolled a 5 ( + momentum of 4).
+ Great shift! You move ahead 1 square.
+
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -|-
+| | | | |>| | | |*| | | | | |#|F|?| | | | | |@| | | |*| | | | | | | | | 
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -|Goal
+| | | | |>| | | |*| | | | | |#| |?| | | | | |@| | | |*|J| | | | | | | | 
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -|-
+
+Fred, type enter to roll.
+Fred rolled a 2 ( + momentum of 4).
+
+
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -|-
+| | | | |>| | | |*| | | | | |#| |?| | | | |F|@| | | |*| | | | | | | | | 
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -|Goal
+| | | | |>| | | |*| | | | | |#| |?| | | | | |@| | | |*|J| | | | | | | | 
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -|-
+
+Jane, type enter to roll.
+Jane rolled a 2 ( + momentum of 5).
+
+
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -|-
+| | | | |>| | | |*| | | | | |#| |?| | | | |F|@| | | |*| | | | | | | | | 
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -|Goal
+| | | | |>| | | |*| | | | | |#| |?| | | | | |@| | | |*| | | | | | | |J| 
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -|-
+
+Fred, type enter to roll.
+Fred rolled a 2 ( + momentum of 5).
+
+
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -|-
+| | | | |>| | | |*| | | | | |#| |?| | | | | |@| | | |*| |F| | | | | | | 
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -|Goal
+| | | | |>| | | |*| | | | | |#| |?| | | | | |@| | | |*| | | | | | | |J| 
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -|-
+
+Jane, type enter to roll.
+Jane rolled a 2 ( + momentum of 6).
+
+
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -|-
+| | | | |>| | | |*| | | | | |#| |?| | | | | |@| | | |*| |F| | | | | | | 
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -|Goal
+| | | | |>| | | |*| | | | | |#| |?| | | | | |@| | | |*| | | | | | | | |J
+ - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -|-
+
+Jane Wins!!!
+
+bash-4.1$ exit
+exit
+
+Script done on Thu 07 Nov 2013 10:49:25 PM PST

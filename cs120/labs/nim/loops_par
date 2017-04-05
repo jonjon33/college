@@ -1,0 +1,14 @@
+Jonathan Hanson
+CS 120 - 01
+Sept 17, 2013
+Lab #3
+
+The do-while and the while are extremely similar loops.  The do-while will
+check the expression after executing the statements, and the while will
+check the expression and then execute the statements.  There is only one
+difference in the way these function in my code.  The do-while needs an
+if statement that runs the code if num_objects != 1.  Otherwise, even if
+there are zero objects, the do-while will execute once and then check
+num_objects, printing an unnecessary object.  In this project, it saves a
+few lines of code to use the while loop, but both loops have their place
+in C code.

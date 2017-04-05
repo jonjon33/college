@@ -1,0 +1,78 @@
+Script started on Tue 24 Sep 2013 11:34:06 AM PDT
+[?1034hbash-4.1$ ./a[Kcalc.out
+
+
+Simple Calculator
+
+Created by: Jonathan Hanson
+Sept 24, 2013
+This program uses functions and a simple, menu-based
+format to make basic math operations easy and fun.
+Input the integer labels in the menu to navigate, and
+input floating point numbers or integers as operands.
+
+Add (1)
+Subtract (2)
+Divide (3)
+Minimum (4)
+Exit (0)
+Enter your choice: 1
+
+Addition Calculator
+Enter a value: 54
+Enter a value: 12
+
+Answer = 66
+
+Add (1)
+Subtract (2)
+Divide (3)
+Minimum (4)
+Exit (0)
+Enter your choice: 2
+
+Subtraction Calculator
+Enter a value: 93
+Enter a value: 100
+
+Answer = -7
+
+Add (1)
+Subtract (2)
+Divide (3)
+Minimum (4)
+Exit (0)
+Enter your choice: 3
+
+Division Calculator
+Enter a value: 36
+Enter a value: 5
+
+Answer = 7.2
+
+Add (1)
+Subtract (2)
+Divide (3)
+Minimum (4)
+Exit (0)
+Enter your choice: 4
+
+Minimum Calculator
+Enter a value: 4
+Enter a value: 8
+
+Answer = 4
+
+Add (1)
+Subtract (2)
+Divide (3)
+Minimum (4)
+Exit (0)
+Enter your choice: 0
+
+Goodbye!
+
+bash-4.1$ exit
+exit
+
+Script done on Tue 24 Sep 2013 11:34:51 AM PDT

@@ -1,0 +1,37 @@
+
+Jonathan Hanson
+Sept 25, 2014
+CS 121
+Lab #3
+
+Programming Log and Design
+
+Design:
+• Environment states will consist of dynamic arrays with 10 cells
+• A menu will allow the user to choose to run a random state, or to load a
+  state from a file
+• A function will check to ensure the file is well formed for the program
+• The program will print its initial state, then run 20 iterations of
+  updating and then printing
+
+Programming Log
+• Issue: How to store cell states
+	o Settled on a simple dynamic array solution over linked
+	  lists/structs due to ease of use. Only one value needs to be
+	  stored for each cell, so there’s no reason to overcomplicate the
+	  access of it.
+• Issue: How to generate random states
+	o Simple rand() % 2 proved perfectly sufficient for randomizing
+	  cell states
+• Issue: Trouble passing the dynamic array to the update() function and
+  returning a dynamic array from the update() function
+	o Using int * update ( int[] , int ) allowed me to pass the array in
+	  and return the array back.  The int * is a new concept for me that
+	  will make future dynamic data usage much easier.
+• Issue: Checking the file
+	o Using ifs.good() let us check if the opened file really existed,
+	  circumnavigating many issues
+	o Creating a function that opened an existing file and read the
+	  contents before processing the file in program provided sufficient
+	  protection for the program
+

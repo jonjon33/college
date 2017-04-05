@@ -1,0 +1,32 @@
+Script started on Tue 03 Sep 2013 11:17:56 AM PDT
+[?1034hbash-4.1$ ./a.out
+Remove 1-3 objects, try to force your opponent to remove the last one.
+23 objects left!
+Your move: 3
+20 objects left!
+Computer removed 2
+18 objects left!
+Your move: 3
+15 objects left!
+Computer removed 2
+13 objects left!
+Your move: 3
+10 objects left!
+Computer removed 1
+9 objects left!
+Your move: 3
+6 objects left!
+Computer removed 2
+4 objects left!
+Your move: 3
+1 objects left!
+Computer removed 1
+Player 1 wins!!!
+bash-4.1$ 3[Kpwd
+/home/hans3767/cs120/labs
+bash-4.1$ ls
+a.out  lab1output  nim.cpp
+bash-4.1$ exit
+exit
+
+Script done on Tue 03 Sep 2013 11:18:36 AM PDT

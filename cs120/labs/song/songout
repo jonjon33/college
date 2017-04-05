@@ -1,0 +1,169 @@
+Script started on Fri 15 Nov 2013 09:49:54 AM PST
+[?1034hbash-4.1$ ./song.out
+
+
+Welcome to your music library.
+
+Keep track of your music in one convinient location. The library
+starts out blank, and you add songs one by one. The library holds
+your five most recently added songs, in the order they were
+added.
+
+Please choose an option:
+  1) Add a Song
+  2) List Songs
+  3) Search by Title
+  4) Exit
+1
+
+Enter title for new song:
+Dark Caft es          An Average Morning
+
+Enter artist for new song:
+Dark      The Dark Cafes 
+
+Enter album for new song:
+Double Shot
+
+Enter length for new song (Minutes and Seconds):
+Minutes: 4
+Seconds: 23 5
+
+
+Please choose an option:
+  1) Add a Song
+  2) List Songs
+  3) Search by Title
+  4) Exit
+1
+
+Enter title for new song:
+Left Fi eidl    ield  
+
+Enter artist for new song:
+The Dark D^HCa      C  Cafe
+
+Enter album for new song:
+Express       Ale leys      Alli    Allie  y ies and Alleys          in the Alleys
+
+Enter length for new song (Minutes and Seconds):
+Minutes: 3
+Seconds: 54
+
+
+Please choose an option:
+  1) Add a Song
+  2) List Songs
+  3) Search by Title
+  4) Exit
+1
+
+Enter title for new song:
+The Long List
+
+Enter artist for new song:
+T Donnie and the Dog B^HP    People
+
+Enter album for new song:
+Bow-Wow
+
+Enter length for new song (Minutes and Seconds):
+Minutes: 3
+Seconds: 32
+
+
+Please choose an option:
+  1) Add a Song
+  2) List Songs
+  3) Search by Title
+  4) Exit
+1
+
+Enter title for new song:
+To Whom
+
+Enter artist for new song:
+The New         New     The Gives rs
+
+Enter album for new song:
+The Givers
+
+Enter length for new song (Minutes and Seconds):
+Minutes: 4
+Seconds: 52
+
+
+Please choose an option:
+  1) Add a Song
+  2) List Songs
+  3) Search by Title
+  4) Exit
+1
+
+Enter title for new song:
+Facade      Masks
+
+Enter artist for new song:
+The Blind M^HB    Bandidt  ts
+
+Enter album for new song:
+The Fold        Fold
+
+Enter length for new song (Minutes and Seconds):
+Minutes: 4
+Seconds: 6
+
+
+Please choose an option:
+  1) Add a Song
+  2) List Songs
+  3) Search by Title
+  4) Exit
+2
+
+Title
+Artist
+Album
+Length
+
+Masks
+The Blind Bandits
+Fold
+4.1
+
+To Whom
+The Givers
+The Givers
+4.86667
+
+The Long List
+Donnie and the Dog People
+Bow-Wow
+3.53333
+
+Left Field
+The Dark Cafe
+Allies in the Alleys
+3.9
+
+An Average Morning
+The Dark Cafe
+Double Shot
+4.41667
+
+
+Please choose an option:
+  1) Add a Song
+  2) List Songs
+  3) Search by Title
+  4) Exit
+3
+
+Enter a title:
+Masks
+
+Segmentation fault
+bash-4.1$ exit
+exit
+
+Script done on Fri 15 Nov 2013 09:56:57 AM PST

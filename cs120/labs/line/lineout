@@ -1,0 +1,27 @@
+Script started on Tue 29 Oct 2013 12:17:47 PM PDT
+[?1034hbash-4.1$ ./line.out
+
+Input a line of text to be used for line 2:
+This is a  n example line of text for the purpose of testing
+
+
+   Line 1 (from default constructor)
+Length of line: 0
+Line is: 
+First char is: 
+Last char is: 
+Choose a character to count: i
+i appears 0 times.
+
+
+   Line 2 (from constructor using arguments)
+Length of line: 58
+Line is: This is an example line of text for the purpose of testing
+First char is: T
+Last char is: g
+Choose a character to count: t
+t appears 5 times.
+bash-4.1$ exit
+exit
+
+Script done on Tue 29 Oct 2013 12:18:19 PM PDT

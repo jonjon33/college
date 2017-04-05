@@ -1,0 +1,49 @@
+Jonathan Hanson
+CS 121
+October 23, 2014
+Lab #7 Programming Log
+
+This log book describes the errors found in the source code and
+the processes applied to resolve them.
+
+Error 1: Compiler Warnings
+ - Upon running gcc on the unchanged source code, several warnings were
+   tossed saying 'incompatible implicit declaration of built-in function'.
+
+ - All this means is that the code has not declared the built-in function
+   anywhere yet.  To fix this, the missing functions must be included via
+   their libraries.  For strlen() and strcpy(), this only required including
+   the string.h library.
+   
+Error 2: Printing Usage on Error
+ - If there are not exactly two arguments passed to main, then the code
+   tosses an error.  The usage prints itself within itself in an odd
+   manner as a result of %s being used without another argument for
+   fprintf().
+
+ - This simply required rewriting the string printed by fprintf() without
+   using %s.
+
+Error 3: strcpy() Usage
+ - The call of strcpy() in the unchanged source code does not set any value
+   for string buffer.
+
+ - Solving this requires an understanding of strcpy().  Proper usage for
+   this function is strcpy( destination , source ).  So it must be called
+   as strcpy(stringBuffer,argv[1]) and not strcpy(argv[1],stringBuffer).
+
+Error 4: printf() Usage
+ - A segmentation fault occurs when printf("%s",*stringBuffer) is called.
+
+ - In order to use a string as an argument in printf(), it must be a pointer
+   to the first character of the string.  It cannot be dereferenced.
+
+Error 5: Traversal Error
+ - head and node are not set to any values during the while loop in
+   reverseIt().
+
+ - The unchanged code's logic (scan < stop) would work if scan and stop
+   were index values of the character array.  However, they were assigned
+   the values of the starting and terminating characters in the string,
+   so their values must be compared in order for loop to properly traverse
+   the string.  ie: (*scan != *stop)

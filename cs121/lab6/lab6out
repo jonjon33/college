@@ -1,0 +1,38 @@
+Script started on Thu 16 Oct 2014 11:09:22 PM PDT
+[?1034hbash-4.1$ ./a.out
+Enter name of file to analyze:
+test1.dat
+File Opened Successfully
+Descriptive Statsitics of Contained Data:
+Min:		Max:		Avg:		Std Dev:
+-1.952576	2.264230	0.198060	1.402538
+bash-4.1$ cat outfile
+Descriptive Statsitics of Contained Data:
+Min:		Max:		Avg:		Std Dev:
+-1.952576	2.264230	0.198060	1.402538
+bash-4.1$ ./a.out 
+Enter name of file to analyze:
+test2.dat
+File Opened Successfully
+Descriptive Statsitics of Contained Data:
+Min:		Max:		Avg:		Std Dev:
+2.700000	118.240000	48.280316	25.667150
+bash-4.1$ cat outfile 
+Descriptive Statsitics of Contained Data:
+Min:		Max:		Avg:		Std Dev:
+2.700000	118.240000	48.280316	25.667150
+bash-4.1$ ./a.out 
+Enter name of file to analyze:
+test3.dat
+File Opened Successfully
+Descriptive Statsitics of Contained Data:
+Min:		Max:		Avg:		Std Dev:
+0.000000	0.480000	0.256200	0.136602
+bash-4.1$ cat outfile 
+Descriptive Statsitics of Contained Data:
+Min:		Max:		Avg:		Std Dev:
+0.000000	0.480000	0.256200	0.136602
+bash-4.1$ exit
+exit
+
+Script done on Thu 16 Oct 2014 11:10:27 PM PDT

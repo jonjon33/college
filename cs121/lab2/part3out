@@ -1,0 +1,15 @@
+Script started on Wed 17 Sep 2014 11:22:15 PM PDT
+[?1034hbash-4.1$ ./part3 124 31.5 the
+Arg Count: 4
+./part3
+124
+31.5
+the
+bash-4.1$ ./part3 124 31.5 the[1@.
+Error: Unexpected char in argument 3; must be double
+bash-4.1$ ./part3 124 3.1.5 the[1P[1@a
+Error: Unexpected char in argument 2; must be int
+bash-4.1$ exit
+exit
+
+Script done on Wed 17 Sep 2014 11:22:43 PM PDT

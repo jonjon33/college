@@ -1,0 +1,48 @@
+Script started on Thu 05 Sep 2013 10:17:09 PM PDT
+[?1034hbash-4.1$ nim[K[K[K./nim.out
+
+
+Welcome to NIM.
+You and your opponent take turns taking objects from a pile.
+You may take between 1 and 3 objects in a turn.
+Whoever takes the last object loses.
+Think carefully!
+
+How many objects in the pile?(must be at least 5) 4
+That simply will not do; pick a number of objects. (must be at least 5) 17
+17 objects remaining
+
+Enter your move (1-3): 4
+Illegal move. 
+Enter a new move between 1 and 3: 3
+14 objects remaining. 
+
+Your opponent removes 3
+11 objects remaining. 
+
+Enter your move (1-3): 2
+9 objects remaining. 
+
+Your opponent removes 1
+8 objects remaining. 
+
+Enter your move (1-3): 3
+5 objects remaining. 
+
+Your opponent removes 1
+4 objects remaining. 
+
+Enter your move (1-3): 3
+1 objects remaining. 
+
+Your opponent removes 1
+0 objects remaining. 
+
+In an astonishing display of utter brilliance, you defeat the computer!!!
+
+Press enter to quit.
+
+bash-4.1$ exit
+exit
+
+Script done on Thu 05 Sep 2013 10:17:37 PM PDT

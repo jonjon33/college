@@ -1,0 +1,22 @@
+Script started on Wed 17 Sep 2014 11:22:55 PM PDT
+[?1034hbash-4.1$ ./part [K4 12 + 13
+Calculating:
+12 + 13 = 25
+bash-4.1$ ./part4 12 + 13[C[1P 13- 13[C[C[C[K[K24
+Calculating:
+12 - 24 = -12
+bash-4.1$ ./part4 12 - 24[1P 24* 24[C[C[C[K[K5
+Error: At Least 3 Args Required
+bash-4.1$ ./part4 12 * 5[1P 5/ 5[C[C[K3
+Calculating:
+12 / 3 = 4
+bash-4.1$ ./part4 12 / 3[Kthe
+Error: Unexpected char in argument 4; must be int
+bash-4.1$ ./part4 12 / the[K[K[K6[C[1P[1P[1@w[1@o[1@r[1@d
+Error: Unexpected char in argument 2; must be int
+bash-4.1$ ./part4 word / 6[1P[1P[1P[1P[1@1[1@2[C[C[1P 6x 6
+Error: Unexpected char in argument 3; must be '+', '-', '*', or '/'
+bash-4.1$ exit
+exit
+
+Script done on Wed 17 Sep 2014 11:24:05 PM PDT

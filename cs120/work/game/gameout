@@ -1,0 +1,214 @@
+Script started on Fri 01 Nov 2013 01:01:23 AM PDT
+[?1034hbash-4.1$ ./ag[K[Kgame.out
+
+
+Crew Racer II
+
+In Crew Racer II, player 1 controls the American
+Olympic Crew Team and player 2 controls the Canadian
+Olympic Crew Team as they compete for gold. Each
+player rolls to see how far his or her team rows on a
+given turn. Spaces marked with a ? contain cute
+ducklings that slow players down, and spaces marked
+with a * contain a tailwind that helps the player
+forward. The first player to reach the goal wins.
+
+
+Player 1, type a character for your boat: $
+
+Player 2, type a character for your boat: Q
+
+
+$   *  ?            Goal
+--------------------
+Q   *  ?            Goal
+--------------------
+
+
+
+Player 1 type enter to roll.
+
+Player 1 rolled a 3.
+
+
+
+   $*  ?            Goal
+--------------------
+Q   *  ?            Goal
+--------------------
+
+
+
+Player 2 type enter to roll.
+
+Player 2 rolled a 5.
+
+
+
+   $*  ?            Goal
+--------------------
+    *Q ?            Goal
+--------------------
+
+
+
+Player 1 type enter to roll.
+
+Player 1 rolled a 4.
+
+ Ducklings slow you down, go back 2 squares.
+
+    *$ ?            Goal
+--------------------
+    *Q ?            Goal
+--------------------
+
+
+
+Player 2 type enter to roll.
+
+Player 2 rolled a 2.
+
+ Ducklings slow you down, go back 2 squares.
+
+    *$ ?            Goal
+--------------------
+    *Q ?            Goal
+--------------------
+
+
+
+Player 1 type enter to roll.
+
+Player 1 rolled a 4.
+
+
+
+    *  ? $          Goal
+--------------------
+    *Q ?            Goal
+--------------------
+
+
+
+Player 2 type enter to roll.
+
+Player 2 rolled a 1.
+
+
+
+    *  ? $          Goal
+--------------------
+    * Q?            Goal
+--------------------
+
+
+
+Player 1 type enter to roll.
+
+Player 1 rolled a 1.
+
+
+
+    *  ?  $         Goal
+--------------------
+    * Q?            Goal
+--------------------
+
+
+
+Player 2 type enter to roll.
+
+Player 2 rolled a 4.
+
+
+
+    *  ?  $         Goal
+--------------------
+    *  ?  Q         Goal
+--------------------
+
+
+
+Player 1 type enter to roll.
+
+Player 1 rolled a 3.
+
+
+
+    *  ?     $      Goal
+--------------------
+    *  ?  Q         Goal
+--------------------
+
+
+
+Player 2 type enter to roll.
+
+Player 2 rolled a 4.
+
+
+
+    *  ?     $      Goal
+--------------------
+    *  ?      Q     Goal
+--------------------
+
+
+
+Player 1 type enter to roll.
+
+Player 1 rolled a 3.
+
+
+
+    *  ?        $   Goal
+--------------------
+    *  ?      Q     Goal
+--------------------
+
+
+
+Player 2 type enter to roll.
+
+Player 2 rolled a 2.
+
+
+
+    *  ?        $   Goal
+--------------------
+    *  ?        Q   Goal
+--------------------
+
+
+
+Player 1 type enter to roll.
+
+Player 1 rolled a 2.
+
+
+
+    *  ?          $ Goal
+--------------------
+    *  ?        Q   Goal
+--------------------
+
+
+
+Player 2 type enter to roll.
+
+Player 2 rolled a 5.
+
+
+
+    *  ?          $ Goal
+--------------------
+    *  ?           QGoal
+--------------------
+
+Player 2 Wins!!!
+
+bash-4.1$ exit
+exit
+
+Script done on Fri 01 Nov 2013 01:01:44 AM PDT

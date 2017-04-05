@@ -1,0 +1,68 @@
+Script started on Thu 06 Nov 2014 01:40:39 PM PST
+[?1034hbash-4.1$ ./a.out
+Exam Questions Coded
+Part 1:
+Stack method interface defined in Stack.h
+Printing an empty Stack
+The Stack is empty
+Push 1-10 to stack in order
+Stack Contents:
+ 10 (top)
+  9
+  8
+  7
+  6
+  5
+  4
+  3
+  2
+  1
+Pop four values from the stackStack Contents:
+  6 (top)
+  5
+  4
+  3
+  2
+  1
+
+
+
+Part 2:
+Zip function
+Lists 1 and 2 created with AddToEnd(int)
+L1:
+  1 (head)
+  3
+  5
+L2:
+  2 (head)
+  4
+  6
+Zipped List:
+  1 (head)
+  6
+  3
+  4
+  5
+  2
+
+
+
+Part 3:
+Remove netagive values function
+List three is created with AddToEnd(int)
+L3:
+  1 (head)
+ -2
+  3
+ -4
+  5
+ -6
+L3 without Negatives:
+  1 (head)
+  3
+  5
+bash-4.1$ exit
+exit
+
+Script done on Thu 06 Nov 2014 01:40:48 PM PST

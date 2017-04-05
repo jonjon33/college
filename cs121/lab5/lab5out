@@ -1,0 +1,50 @@
+Script started on Thu 09 Oct 2014 10:54:28 AM PDT
+[?1034hbash-4.1$ cd Stack/
+bash-4.1$ ls
+link.cpp  link.h  Makefile  stack.cpp  stack.h	testStack.cpp
+bash-4.1$ make testStack
+g++    -c -o testStack.o testStack.cpp
+g++    -c -o stack.o stack.cpp
+g++    -c -o link.o link.cpp
+g++ -o testStack testStack.o stack.o link.o
+bash-4.1$ ls
+link.cpp  link.h  link.o  Makefile  stack.cpp  stack.h	stack.o  testStack  testStack.cpp  testStack.o
+bash-4.1$ make clean
+rm -f testStack 
+rm *.o
+bash-4.1$ ls
+link.cpp  link.h  Makefile  stack.cpp  stack.h	testStack.cpp
+bash-4.1$ cd ../Queue
+bash-4.1$ ls
+listQ.cpp  listQ.h  Makefile  queueL.cpp  queueL.h  testQueue.cpp
+bash-4.1$ make testQueue
+g++    -c -o testQueue.o testQueue.cpp
+g++    -c -o queueL.o queueL.cpp
+g++    -c -o listQ.o listQ.cpp
+g++ -o testQueue testQueue.o queueL.o listQ.o
+bash-4.1$ ls
+listQ.cpp  listQ.h  listQ.o  Makefile  queueL.cpp  queueL.h  queueL.o  testQueue  testQueue.cpp  testQueue.o
+bash-4.1$ ./testQueue 
+Initial contents of q1:
+3
+5
+Contents of q1 after adding:
+3
+5
+1
+
+Deleting two items from queue:
+Contents of q1 after deleting one item:
+5
+1
+Contents of q1 after deleting one item:
+1
+bash-4.1$ make clean
+rm -f testQueue 
+rm *.o
+bash-4.1$ ls
+listQ.cpp  listQ.h  Makefile  queueL.cpp  queueL.h  testQueue.cpp
+bash-4.1$ exit
+exit
+
+Script done on Thu 09 Oct 2014 10:55:42 AM PDT

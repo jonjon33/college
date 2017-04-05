@@ -1,0 +1,25 @@
+Script started on Thu 12 Sep 2013 08:48:33 PM PDT
+[?1034hbash-4.1$ div.[K.out[K[K[K[K[K[K[K./div.out
+
+\ \ \ \ \ \ \ \ \ \ DIVISION CALCULATOR 9000 / / / / / / / / / /
+
+Please enter a dividend for your desired division: 54
+Now please enter a divisor for your desired division: 7
+The quotient of 54/7 = 7 with a remainder of 5
+Or 7.71429
+
+Would you like to run Division Calculator 9000 again? (y/n): y
+
+Please enter a dividend for your desired division: 423
+Now please enter a divisor for your desired division: 4
+The quotient of 423/4 = 105 with a remainder of 3
+Or 105.75
+
+Would you like to run Division Calculator 9000 again? (y/n): n
+
+Goodbye!
+
+bash-4.1$ exit
+exit
+
+Script done on Thu 12 Sep 2013 08:49:04 PM PDT

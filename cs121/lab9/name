@@ -1,0 +1,31 @@
+Jonathan Hanson
+November 6, 2014
+CS 121
+Lab #9 Programming Log
+
+Programming Log:
+This lab allowed for a more in depth attempt at the problems posed in the 
+previous data structures exam.  It comprised several disjoint problems with
+their own challenges.  It took a full two hours of effort to put together the
+program covering all the problems.  Challenges and solutions for each part
+are discussed below.
+
+Part 1
+This didn't pose any serious individual challenges. My goal was to implement
+the stack without referring to any of my previous code, and I was mostly
+successful though there were a few syntax errors (forgetting the semicolon after
+the end curly brace or forgetting a "Stack::").  I ended up going back to add a
+IsEmpty() function, as it can be extremely beneficial for traversal outside of
+the methods.
+
+Part 2
+This proved simple enough.  The one major hang up I had was I could not figure
+out how to get the resulting list in the function back to the main function. I
+settled with including another list passed by reference to be the result list.
+Otherwise it just required clever Popping, Pushing, Adding, and Removing.
+
+Part 3
+Similarly simple, once the list object was properly in place.  Store the
+positive values in a temporary list, then write that list to the old list
+(which was passed by reference).  This part didn't work immediately, but it was
+due to a simple mistake in the comparison in the if statement.

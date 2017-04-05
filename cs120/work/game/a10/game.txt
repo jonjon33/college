@@ -1,0 +1,6 @@
+16 -2 ? Row backward to let ducklings cross, go back 2 squares.
+8 +1 * A tailwind blows you ahead 1 square.
+26 +1 * A tailwind blows you ahead 1 square.
+22 0 @ Stuck in a whirlpool, lose a turn.
+4 0 > Your rhythmic chanting distracts your opponents, roll again.
+14 0 # An insane wind gust blows you to a random square!

@@ -1,0 +1,52 @@
+Script started on Thu 05 Dec 2013 11:51:28 PM PST
+[?1034hbash-4.1$ ./a.out
+There are 3 robots in the list: 
+Robot 0: Energy = 50   Direction = 0
+Robot 1: Energy = 50   Direction = 0
+Robot 2: Energy = 50   Direction = 0
+
+Turn all robots left:
+There are 3 robots in the list: 
+Robot 0: Energy = 49   Direction = 3
+Robot 1: Energy = 49   Direction = 3
+Robot 2: Energy = 49   Direction = 3
+
+Delete Robot 2, add Robot 99:
+There are 3 robots in the list: 
+Robot 0: Energy = 49   Direction = 3
+Robot 1: Energy = 49   Direction = 3
+Robot 99: Energy = 50   Direction = 0
+
+Robot 1 left:
+There are 3 robots in the list: 
+Robot 0: Energy = 49   Direction = 3
+Robot 1: Energy = 48   Direction = 2
+Robot 99: Energy = 50   Direction = 0
+
+Robot 99 left twice:
+There are 3 robots in the list: 
+Robot 0: Energy = 49   Direction = 3
+Robot 1: Energy = 48   Direction = 2
+Robot 99: Energy = 48   Direction = 2
+
+All robots right:
+There are 3 robots in the list: 
+Robot 0: Energy = 48   Direction = 0
+Robot 1: Energy = 47   Direction = 3
+Robot 99: Energy = 47   Direction = 3
+
+All robots forward:
+There are 3 robots in the list: 
+Robot 0: Energy = 46   Direction = 0
+Robot 1: Energy = 45   Direction = 3
+Robot 99: Energy = 45   Direction = 3
+
+Robot 0 forward 10 times:
+There are 3 robots in the list: 
+Robot 0: Energy = 26   Direction = 0
+Robot 1: Energy = 45   Direction = 3
+Robot 99: Energy = 45   Direction = 3
+bash-4.1$ exit
+exit
+
+Script done on Thu 05 Dec 2013 11:51:33 PM PST

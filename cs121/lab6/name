@@ -1,0 +1,36 @@
+Jonathan Hanson
+Oct 16, 2014
+CS 121
+Lab #7 Design and Programming Log
+
+Design:
+This program provides descriptive statistics for a set of data. Data is
+provided through a file stream, and output is written to another file.
+
+Since it is required that no C++ be used, the file stream and standard
+I/O are written in C stdio functions. Function parameters are passed by
+pointer so that all true values remain in the main program.
+
+Required fuctions are:
+ - ShowHeader()   -   Prints output to outfile
+ - ReadColumn()   -   Inputs data from file
+ - UpdateDescriptiveStats   -   Finds min, max, avg
+ - CalcStdDev()   -   Finds stdDev
+
+Log:
+-Issue: Reading an extra item from file
+    - By having the fscanf in ReadColumn() execute in the while logic, the
+      problem of reading an extra value after the last value but before 
+      the EOF was fixed.
+-Issue: Passing arguments by pointer
+    - Different data types functioned differently when passed by pointer to
+      a function. Files and arrays did not require astrisks when accessed
+      in a function, and ints and double had to be passed in main with 
+      ampersands. Learning the different syntactical oddities remedied this.
+-Issue: How to square root
+    - Square root is available through the C math libraries. sqrt takes a
+      double and returns the square root.
+-Issue: Only recieving 0. for standard deviation
+    - Using itemCount in the calculation of stdDev was a problem because
+      itemCount is an int. The resulting trucation was fixed by assigning
+      itemCount to a double.

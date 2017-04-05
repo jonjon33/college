@@ -1,0 +1,14 @@
+Jonathan Hanson
+CS 121 - 01
+Lab #1
+09/04/2014
+
+Step 8:
+/home/hans3767/cs121/lab1/hw1
+
+Step 12:
+Running a.out created a new line, printed the string in the cout, then added another new line before returning to the command prompt.
+
+Step 14:
+a.out  hw1  hw1script  program1.cpp
+

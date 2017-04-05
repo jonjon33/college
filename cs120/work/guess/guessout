@@ -1,0 +1,81 @@
+Script started on Tue 17 Sep 2013 07:20:46 PM PDT
+[?1034hbash-4.1$ ./guess.out
+
+
+ + - + - + - Guess my Number! - + - + - + 
+
+Guess my Number is a simple guessing game.
+I'll think of a random integer between one and
+whichever number you choose, and you'll try to
+guess it.
+
+What is the highest number I can choose? 102
+
+I've got my number.
+
+Make a guess: 54
+
+Too large.
+Make another guess: 24
+
+Too small.
+Make another guess: 40 0
+
+Too large.
+Make another guess: 34
+
+Congratulations, you've guessed the number!
+It took you 4 guesses.
+You've won 1 game.
+Would you like to play again? (y/n): y
+
+
+ + - + - + - Guess my Number! - + - + - + 
+
+Guess my Number is a simple guessing game.
+I'll think of a random integer between one and
+whichever number you choose, and you'll try to
+guess it.
+
+What is the highest number I can choose? 148
+
+I've got my number.
+
+Make a guess: -5
+
+That input won't work, try again: 50
+
+Too small.
+Make another guess: 80
+
+Too small.
+Make another guess: 100
+
+Too small.
+Make another guess: 150
+
+That input won't work, try again: 130
+
+Too large.
+Make another guess: 120
+
+Too small.
+Make another guess: 123
+
+Too large.
+Make another guess: 122
+
+Too large.
+Make another guess: 121
+
+Congratulations, you've guessed the number!
+It took you 8 guesses.
+You've won 2 games.
+Would you like to play again? (y/n): n
+
+Goodbye!
+
+bash-4.1$ exit
+exit
+
+Script done on Tue 17 Sep 2013 07:23:15 PM PDT

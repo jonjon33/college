@@ -1,0 +1,106 @@
+Script started on Thu 12 Sep 2013 09:02:00 PM PDT
+[?1034hbash-4.1$ ./nim.out
+
+
+Welcome to NIM.
+I am your computer opponent, and likely your intellectual superior.
+You and I will take turns taking objects from a pile.
+Whoever takes the last object loses.
+Good luck, you'll need it.
+
+Since I'm feeling generous, you may select the number of objects in the pile. (input a postive integer): 27
+Additionally, you may select the largest quantity of objects you or I can take in a turn. (input a postive integer): 4
+
+Those will do nicely.
+
+Up to 4 objects can be taken in a turn.
+27 objects remaining
+
+I have randomly decided that I will go first.
+
+I remove 1
+26 objects remaining. 
+
+Enter your move (1-4): 4
+22 objects remaining. 
+
+I remove 1
+21 objects remaining. 
+
+Enter your move (1-4): 2
+19 objects remaining. 
+
+I remove 3
+16 objects remaining. 
+
+Enter your move (1-4): 3
+13 objects remaining. 
+
+I remove 2
+11 objects remaining. 
+
+Enter your move (1-4): 4
+7 objects remaining. 
+
+I remove 1
+6 objects remaining. 
+
+Enter your move (1-4): 2
+4 objects remaining. 
+
+I remove 3
+1 objects remaining. 
+
+Enter your move (1-4): 1
+0 objects remaining. 
+
+I am not surprised that your feeble mind was unable to defeat me.
+
+You have won 0 games and I have won 1 games.
+
+Would you like to play again? Yes
+
+
+How many objects would you like in the pile this time? 33
+What is the largest quantity of objects a player may take this time? 9
+
+This will make for an interesting game.
+
+Up to 9 objects can be taken in a turn.
+33 objects remaining
+
+I have randomly decided that you will go first.
+
+Enter your move (1-9): 3
+30 objects remaining. 
+
+I remove 9
+21 objects remaining. 
+
+Enter your move (1-9): 1
+20 objects remaining. 
+
+I remove 9
+11 objects remaining. 
+
+Enter your move (1-9): 1
+10 objects remaining. 
+
+I remove 9
+1 objects remaining. 
+
+Enter your move (1-9): 1
+0 objects remaining. 
+
+I am not surprised that your feeble mind was unable to defeat me.
+
+You have won 0 games and I have won 2 games.
+
+Would you like to play again? no, thanks
+
+Goodbye!
+
+bash-4.1$ exit
+exit
+
+Script done on Thu 12 Sep 2013 09:23:29 PM PDT

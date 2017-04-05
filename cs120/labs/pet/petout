@@ -1,0 +1,146 @@
+Write 6-8 weaknesses or improvements for the pet program in the textbook.
+  - “Invalid choice” should be stated for improper input in the main menu
+  - When an invalid choice is entered in the play menu, user should be returned to the play menu not the main menu
+  - There should be an option in the play menu to return to the main menu without playing (not just the default option, but an actual menu option)
+  - The pet’s hunger shouldn’t go below 0.  It should refuse food or die from over eating when its hunger is negative.
+  - There should be more options for feeding the pet
+  - The pet should communicate with the user, asking to play or to eat or simply stating that it is happy or full
+  - Perhaps eventually the program could have different types of pets that prefer different types of food or play
+
+Write the changes you made to the program.
+I made all the assigned changes.
+  - I fixed all the menus to recognize invalid choices and made it easy to navigate between menus
+  - I added an option for feeding the pet
+  - I added an option for playing with the pet
+  - I gave the pet a response for each option in the feed menu
+  - I gave the pet a response for each option in the play menu
+
+Script started on Tue 08 Oct 2013 11:21:10 AM PDT
+[?1034hbash-4.1$ pet.[K[K[K[K./pet.out
+Pet's name? (one word) Bob
+
+Your pet Bob is 
+Happy: 50
+Hungry: 50
+What would you like to do with your pet?
+ Play (1) 
+ Feed (2) 
+ Exit (0) 
+3
+
+Invalid choice.
+
+Your pet Bob is 
+Happy: 50
+Hungry: 50
+What would you like to do with your pet?
+ Play (1) 
+ Feed (2) 
+ Exit (0) 
+1
+
+What should we play?
+ Fetch (1) 
+ Roll over (2) 
+ Peek-a-Boo (3) 
+ Main Menu (0) 
+1
+
+I sure love fetch, but now I'm tired!
+
+Your pet Bob is 
+Happy: 60
+Hungry: 55
+What would you like to do with your pet?
+ Play (1) 
+ Feed (2) 
+ Exit (0) 
+1
+
+What should we play?
+ Fetch (1) 
+ Roll over (2) 
+ Peek-a-Boo (3) 
+ Main Menu (0) 
+4
+Not a valid choice.
+
+What should we play?
+ Fetch (1) 
+ Roll over (2) 
+ Peek-a-Boo (3) 
+ Main Menu (0) 
+3
+
+Your face is so weird.
+
+Your pet Bob is 
+Happy: 62
+Hungry: 57
+What would you like to do with your pet?
+ Play (1) 
+ Feed (2) 
+ Exit (0) 
+1
+
+What should we play?
+ Fetch (1) 
+ Roll over (2) 
+ Peek-a-Boo (3) 
+ Main Menu (0) 
+0
+
+Your pet Bob is 
+Happy: 62
+Hungry: 57
+What would you like to do with your pet?
+ Play (1) 
+ Feed (2) 
+ Exit (0) 
+2
+
+What will you feed me?
+ Generic Pet Food (1) 
+ Fancy Pet Food (2) 
+ Main Menu (0) 
+1
+
+It's better than starving, I guess.
+
+Your pet Bob is 
+Happy: 62
+Hungry: 55
+What would you like to do with your pet?
+ Play (1) 
+ Feed (2) 
+ Exit (0) 
+2
+
+What will you feed me?
+ Generic Pet Food (1) 
+ Fancy Pet Food (2) 
+ Main Menu (0) 
+3
+Not a valid choice.
+
+What will you feed me?
+ Generic Pet Food (1) 
+ Fancy Pet Food (2) 
+ Main Menu (0) 
+0
+
+Your pet Bob is 
+Happy: 62
+Hungry: 55
+What would you like to do with your pet?
+ Play (1) 
+ Feed (2) 
+ Exit (0) 
+0 0
+
+Press enter to exit.
+
+bash-4.1$ exit
+exit
+
+Script done on Tue 08 Oct 2013 11:22:37 AM PDT

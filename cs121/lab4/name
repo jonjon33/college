@@ -1,0 +1,58 @@
+Jonathan Hanson
+October 2, 2014
+CS 121
+Lab #4 Design and Programming Log
+
+Design:
+Objective – Program that recognizes input alphabetic palindromes
+
+Components
+•Stack Class
+   oNode struct for lists
+   oDefinition of NodePtr data type for stack manipulation methods
+   oConstructor
+      Initializes head to be NULL
+   oPush( char ) method (add to front)
+      Add chars to the stack
+   oPop() method (remove from front and return info)
+      Remove chars as Last In First Out
+   oPrintAll() method (prints each element of the stack)
+      Debugging tool
+   oisEmpty() method (check if there are elements in the node)
+      Used with while loops to pop through a variable stack size
+•Main
+   oStore alphabetic input as a lower case strings
+   oStore the reverse of the alphabetic string by storing what popped through
+    the stack
+   oCompareStrings function
+      Compares each char of two strings to see if they are identical
+
+
+Log:
+The project took a little over two hours to complete.  For 15-30 minutes at a
+time over a couple days I experimented with manipulating strings as arrays and
+creating a stack.  Then it took about an hour to bring all the individual
+pieces together and debug the result.
+
+My process has improved significantly since the beginning of the semester, and
+it’s mostly due to my comfort with opening a blank file and hashing out a
+small program that applies a concept.  Many times when I write my labs I feel
+like the project has gotten too big to let me take experimental steps.  Having
+small pieces worked out outside the main program has decreased my errors and
+my time spent working.
+
+•Issue: How to acquire an entire line of input
+   o Cin only grabbed words from the input, so I needed to find
+     getline( cin , str )
+•Issue: How to avoid segmentation faults and comparing null values in the
+ dynamic arrays of char
+   o alphaCharCount int counted through the input before pushing to the stack
+     or allocating the dynamic arrays so that sizing would be correct
+     throughout the program
+•Issue: Program would do weird things to values in lowerForwardStr and
+ lowerReverseStr
+   o Memory was not being released at the end of program.  It didn’t seem like
+     that should have the effect that it did, but adding delete [] to the end
+     of the program cleared up the unpredictable additional characters or
+     changed characters
+

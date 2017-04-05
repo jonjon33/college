@@ -1,0 +1,52 @@
+Jonathan Hanson
+October 30, 2014
+CS 121
+Lab #8
+
+Programming Log
+This lab consisted of a step-by-step walk through the memerror code in
+the GNU debugger.  It was a straight forward process that took in total
+a little over an hour and a half. Break points were included in main and in
+the reverseIt function.  While only three errors require fixes in order for
+the program to function, there are some house-keeping fixes that can be
+made as well. The GNU debugger presented no serious problems, and will be
+a useful tool for future projects in unix.
+
+Documentation of Errors
+- Error: Series of warnings when compiling
+   - Solution: The series of warnings that turn up when compiling are a
+      result of calling strlen() and strcpy() without having the proper
+      libraries included. Including string.h fixes all of them.
+   - : #include <string.h>
+
+- Error: %s string in usage is incohesive
+   - Solution: This non-sensical usage needs to be rewritten so it
+      provides usable information for the user.
+   - : fprintf(stderr,"Usage: This program reverses a single string
+                       given on the command line.\n");
+
+- Error: stringBuffer doesn’t have a value after strcpy()
+   - Solution: The problem results from improper use of the strcpy()
+      function. Usage is strcpy(destination,source). This can simply be
+      fixed by switching the arguments of strcpy.
+   - : strcpy(stringBuffer,argv[1]);
+
+- Error: stop is not allocated properly
+   - Solution: The stop address value is two NULL characters after the
+      last non-NULL character of stringBuffer. This is because the
+      original coder erroniously added a + 1 to the address value.
+      Removing the + 1 solves the problem.
+   - : stop = stringbuffer + strlen(stringbuffer);
+
+- Error: node is not released at end of reverseIt()
+   - Solution: When freeing head at the end of reverseIt(), node should
+       be freed as well in order to preserve memory efficiency.
+   - : free(node);
+
+- Error: printf requires string address
+   - Solution: Once the other fixes have been made, the final printf
+      only prints the last character of the string given on the command
+      line. To fix this, the argument in printf should be referencing
+      the address of stringBuffer, not dereferencing stringBuffer and
+      using the value.
+   - : printf("the reversed string is '%s'\n",stringBuffer);

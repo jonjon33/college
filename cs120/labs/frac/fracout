@@ -1,0 +1,99 @@
+Script started on Tue 22 Oct 2013 11:39:17 AM PDT
+[?1034hbash-4.1$ ./a[Kfrac.out
+Please choose from the following
+1) Change the value of fraction one
+2) Change the value of fraction two
+3) Print the values of the fractions
+4) Verify fraction one is equal to fraction two
+5) Add fraction one to fraction two to get a result
+6) Quit
+Choice --> 1
+fraction one is: 0/1
+Please enter a new value for the numerator 8/ 
+Please enter a new value for the denominator 16
+fraction one is: 1/2
+Please choose from the following
+1) Change the value of fraction one
+2) Change the value of fraction two
+3) Print the values of the fractions
+4) Verify fraction one is equal to fraction two
+5) Add fraction one to fraction two to get a result
+6) Quit
+Choice --> 2
+fraction two is: 2/3
+Please enter a new value for the numerator 48
+Please enter a new value for the denominator 96
+fraction two is: 1/2
+Please choose from the following
+1) Change the value of fraction one
+2) Change the value of fraction two
+3) Print the values of the fractions
+4) Verify fraction one is equal to fraction two
+5) Add fraction one to fraction two to get a result
+6) Quit
+Choice --> 3
+fraction one is: 1/2
+fraction two is: 1/2
+Please choose from the following
+1) Change the value of fraction one
+2) Change the value of fraction two
+3) Print the values of the fractions
+4) Verify fraction one is equal to fraction two
+5) Add fraction one to fraction two to get a result
+6) Quit
+Choice --> 4
+fraction one is the same as fraction two
+Please choose from the following
+1) Change the value of fraction one
+2) Change the value of fraction two
+3) Print the values of the fractions
+4) Verify fraction one is equal to fraction two
+5) Add fraction one to fraction two to get a result
+6) Quit
+Choice --> 2
+fraction two is: 1/2
+Please enter a new value for the numerator 6
+Please enter a new value for the denominator 24
+fraction two is: 1/4
+Please choose from the following
+1) Change the value of fraction one
+2) Change the value of fraction two
+3) Print the values of the fractions
+4) Verify fraction one is equal to fraction two
+5) Add fraction one to fraction two to get a result
+6) Quit
+Choice --> 3
+fraction one is: 1/2
+fraction two is: 1/4
+Please choose from the following
+1) Change the value of fraction one
+2) Change the value of fraction two
+3) Print the values of the fractions
+4) Verify fraction one is equal to fraction two
+5) Add fraction one to fraction two to get a result
+6) Quit
+Choice --> 4
+fraction one is NOT the same as fraction two
+Please choose from the following
+1) Change the value of fraction one
+2) Change the value of fraction two
+3) Print the values of the fractions
+4) Verify fraction one is equal to fraction two
+5) Add fraction one to fraction two to get a result
+6) Quit
+Choice --> 5
+The result of 1/2 + 1/4 is 3/4
+Please choose from the following
+1) Change the value of fraction one
+2) Change the value of fraction two
+3) Print the values of the fractions
+4) Verify fraction one is equal to fraction two
+5) Add fraction one to fraction two to get a result
+6) Quit
+Choice --> 6
+You have chosen to quit
+GOODBYE!
+bash-4.1$ exit
+exit
+
+Script done on Tue 22 Oct 2013 11:40:09 AM PDT

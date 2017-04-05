@@ -1,0 +1,141 @@
+Script started on Thu 25 Sep 2014 03:17:22 PM PDT
+[?1034hbash-4.1$ ./a.out
+One Dimentional Cellular Automata Simulation
+  1) Generate Random Simulation State
+  2) Load Simulation State from File
+  3) Help
+  4) Exit
+1
+Generating file...
+Staring Simulation...
+0 0 0 1 0 1 1 1 1 1 
+0 0 1 0 0 1 0 0 0 1 
+0 1 0 1 1 0 1 0 1 0 
+1 0 0 1 1 0 0 0 0 1 
+0 1 1 1 1 1 0 0 1 0 
+1 1 0 0 0 1 1 1 0 1 
+1 1 1 0 1 1 0 1 0 0 
+1 0 1 0 1 1 0 0 1 0 
+0 0 0 0 1 1 1 1 0 1 
+0 0 0 1 1 0 0 1 0 0 
+0 0 1 1 1 1 1 0 1 0 
+0 1 1 0 0 0 1 0 0 1 
+1 1 1 1 0 1 0 1 1 0 
+1 0 0 1 0 0 0 1 1 1 
+0 1 1 0 1 0 1 1 0 1 
+1 1 1 0 0 0 1 1 0 0 
+1 0 1 1 0 1 1 1 1 0 
+0 0 1 1 0 1 0 0 1 1 
+0 1 1 1 0 0 1 1 1 1 
+1 1 0 1 1 1 1 0 0 1 
+1 1 0 1 0 0 1 1 1 0 
+End of Simulation
+Returning to Menu...
+One Dimentional Cellular Automata Simulation
+  1) Generate Random Simulation State
+  2) Load Simulation State from File
+  3) Help
+  4) Exit
+1
+Generating file...
+Staring Simulation...
+1 1 0 1 0 0 0 1 1 0 
+1 1 0 0 1 0 1 1 1 1 
+1 1 1 1 0 0 1 0 0 1 
+1 0 0 1 1 1 0 1 1 0 
+0 1 1 1 0 1 0 1 1 1 
+1 1 0 1 0 0 0 1 0 1 
+1 1 0 0 1 0 1 0 0 0 
+1 1 1 1 0 0 0 1 0 0 
+1 0 0 1 1 0 1 0 1 0 
+0 1 1 1 1 0 0 0 0 1 
+1 1 0 0 1 1 0 0 1 0 
+1 1 1 1 1 1 1 1 0 1 
+1 0 0 0 0 0 0 1 0 0 
+0 1 0 0 0 0 1 0 1 0 
+1 0 1 0 0 1 0 0 0 1 
+0 0 0 1 1 0 1 0 1 0 
+0 0 1 1 1 0 0 0 0 1 
+0 1 1 0 1 1 0 0 1 0 
+1 1 1 0 1 1 1 1 0 1 
+1 0 1 0 1 0 0 1 0 0 
+0 0 0 0 0 1 1 0 1 0 
+End of Simulation
+Returning to Menu...
+One Dimentional Cellular Automata Simulation
+  1) Generate Random Simulation State
+  2) Load Simulation State from File
+  3) Help
+  4) Exit
+2
+Enter the name of the file to load
+state1
+Checking File...
+Staring Simulation...
+1 0 1 0 1 0 1 0 1 0 
+0 0 0 0 0 0 0 0 0 1 
+0 0 0 0 0 0 0 0 1 0 
+0 0 0 0 0 0 0 1 0 1 
+0 0 0 0 0 0 1 0 0 0 
+0 0 0 0 0 1 0 1 0 0 
+0 0 0 0 1 0 0 0 1 0 
+0 0 0 1 0 1 0 1 0 1 
+0 0 1 0 0 0 0 0 0 0 
+0 1 0 1 0 0 0 0 0 0 
+1 0 0 0 1 0 0 0 0 0 
+0 1 0 1 0 1 0 0 0 0 
+1 0 0 0 0 0 1 0 0 0 
+0 1 0 0 0 1 0 1 0 0 
+1 0 1 0 1 0 0 0 1 0 
+0 0 0 0 0 1 0 1 0 1 
+0 0 0 0 1 0 0 0 0 0 
+0 0 0 1 0 1 0 0 0 0 
+0 0 1 0 0 0 1 0 0 0 
+0 1 0 1 0 1 0 1 0 0 
+1 0 0 0 0 0 0 0 1 0 
+End of Simulation
+Returning to Menu...
+One Dimentional Cellular Automata Simulation
+  1) Generate Random Simulation State
+  2) Load Simulation State from File
+  3) Help
+  4) Exit
+2
+Enter the name of the file to load
+state2
+Checking File...
+Staring Simulation...
+0 1 1 0 1 1 0 1 1 0 
+1 1 1 0 1 1 0 1 1 1 
+1 0 1 0 1 1 0 1 0 1 
+0 0 0 0 1 1 0 0 0 0 
+0 0 0 1 1 1 1 0 0 0 
+0 0 1 1 0 0 1 1 0 0 
+0 1 1 1 1 1 1 1 1 0 
+1 1 0 0 0 0 0 0 1 1 
+1 1 1 0 0 0 0 1 1 1 
+1 0 1 1 0 0 1 1 0 1 
+0 0 1 1 1 1 1 1 0 0 
+0 1 1 0 0 0 0 1 1 0 
+1 1 1 1 0 0 1 1 1 1 
+1 0 0 1 1 1 1 0 0 1 
+0 1 1 1 0 0 1 1 1 0 
+1 1 0 1 1 1 1 0 1 1 
+1 1 0 1 0 0 1 0 1 1 
+1 1 0 0 1 1 0 0 1 1 
+1 1 1 1 1 1 1 1 1 1 
+1 0 0 0 0 0 0 0 0 1 
+0 1 0 0 0 0 0 0 1 0 
+End of Simulation
+Returning to Menu...
+One Dimentional Cellular Automata Simulation
+  1) Generate Random Simulation State
+  2) Load Simulation State from File
+  3) Help
+  4) Exit
+4
+Goodbye!
+bash-4.1$ exit
+exit
+
+Script done on Thu 25 Sep 2014 03:17:50 PM PDT

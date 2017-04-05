@@ -1,0 +1,115 @@
+Script started on Tue 17 Sep 2013 11:03:42 AM PDT
+[?1034hbash-4.1$ ./nimg1.out
+
+
+Welcome to NIM.
+I am your computer opponent, and likely your intellectual superior.
+You and I will take turns taking objects from a pile.
+Whoever takes the last object loses.
+Good luck, you'll need it.
+
+Since I'm feeling generous, you may select the number of objects in the pile. (input a postive integer): 26
+Additionally, you may select the largest quantity of objects you or I can take in a turn. (input a postive integer): 3
+
+Those will do nicely.
+
+Up to 3 objects can be taken in a turn.
+
+#   #   #   #   #   #   #   #   #   #   
+#   #   #   #   #   #   #   #   #   #   
+#   #   #   #   #   #   
+26 objects remaining
+
+I have randomly decided that you will go first.
+
+Enter your move (1-3): 1
+
+#   #   #   #   #   #   #   #   #   #   
+#   #   #   #   #   #   #   #   #   #   
+#   #   #   #   #   
+25 objects remaining. 
+
+I remove 2
+
+#   #   #   #   #   #   #   #   #   #   
+#   #   #   #   #   #   #   #   #   #   
+#   #   #   
+23 objects remaining. 
+
+Enter your move (1-3): 2
+
+#   #   #   #   #   #   #   #   #   #   
+#   #   #   #   #   #   #   #   #   #   
+#   
+21 objects remaining. 
+
+I remove 3
+
+#   #   #   #   #   #   #   #   #   #   
+#   #   #   #   #   #   #   #   
+18 objects remaining. 
+
+Enter your move (1-3): 1
+
+#   #   #   #   #   #   #   #   #   #   
+#   #   #   #   #   #   #   
+17 objects remaining. 
+
+I remove 2
+
+#   #   #   #   #   #   #   #   #   #   
+#   #   #   #   #   
+15 objects remaining. 
+
+Enter your move (1-3): 2
+
+#   #   #   #   #   #   #   #   #   #   
+#   #   #   
+13 objects remaining. 
+
+I remove 3
+
+#   #   #   #   #   #   #   #   #   #   
+10 objects remaining. 
+
+Enter your move (1-3): 1
+
+#   #   #   #   #   #   #   #   #   
+9 objects remaining. 
+
+I remove 3
+
+#   #   #   #   #   #   
+6 objects remaining. 
+
+Enter your move (1-3): 1
+
+#   #   #   #   #   
+5 objects remaining. 
+
+I remove 3
+
+#   #   
+2 objects remaining. 
+
+Enter your move (1-3): 1
+
+#   
+1 objects remaining. 
+
+I remove 1
+
+0 objects remaining. 
+
+Alas, I have been bested.  Congratulations!
+
+You have won 1 games and I have won 0 games.
+
+Would you like to play again? no
+
+Goodbye!
+
+bash-4.1$ exit
+exit
+
+Script done on Tue 17 Sep 2013 11:04:29 AM PDT

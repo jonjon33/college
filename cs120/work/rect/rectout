@@ -1,0 +1,87 @@
+Script started on Fri 18 Oct 2013 02:53:41 AM PDT
+[?1034hbash-4.1$ ./rect.cpp[K[K[Kout
+
+Rectangle Creator
+
+Input any value for the width: 4	= 
+Input any value for the height: 5
+Input an integer value for the x position: 3
+Input an integer value for the y position: 2
+
+Position: 3,2
+Width: 4
+Height: 5
+
+ Enter New Values (1)
+ Reprint Current Values (2)
+ Calculate Area (3)
+ Calculate Perimeter (4)
+ Calculate Distance from Origin (5)
+ Exit (0)
+1
+
+Input any value for the width: 10
+Input any value for the height: 6
+Input an integer value for the x position: 4
+Input an integer value for the y position: 5
+
+Position: 4,5
+Width: 10
+Height: 6
+
+ Enter New Values (1)
+ Reprint Current Values (2)
+ Calculate Area (3)
+ Calculate Perimeter (4)
+ Calculate Distance from Origin (5)
+ Exit (0)
+2
+
+Position: 4,5
+Width: 10
+Height: 6
+
+ Enter New Values (1)
+ Reprint Current Values (2)
+ Calculate Area (3)
+ Calculate Perimeter (4)
+ Calculate Distance from Origin (5)
+ Exit (0)
+3
+
+Area: 60
+
+ Enter New Values (1)
+ Reprint Current Values (2)
+ Calculate Area (3)
+ Calculate Perimeter (4)
+ Calculate Distance from Origin (5)
+ Exit (0)
+4
+
+Perimeter: 32
+
+ Enter New Values (1)
+ Reprint Current Values (2)
+ Calculate Area (3)
+ Calculate Perimeter (4)
+ Calculate Distance from Origin (5)
+ Exit (0)
+5
+
+Distance: 6.40312
+
+ Enter New Values (1)
+ Reprint Current Values (2)
+ Calculate Area (3)
+ Calculate Perimeter (4)
+ Calculate Distance from Origin (5)
+ Exit (0)
+0
+
+Goodbye!
+
+bash-4.1$ exit
+exit
+
+Script done on Fri 18 Oct 2013 02:54:38 AM PDT

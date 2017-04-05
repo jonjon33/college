@@ -1,0 +1,56 @@
+Jonathan Hanson
+Sept 18, 2014
+CS 121			
+Lab #2 Programming Log
+
+- Issue: Only first character of any given argument was returned
+
+This problem was a result of using the following line:
+		*cPtr = argv;
+This gave cPtr the value of the first char of the string of a given
+element of argv[] (argv[0] above), which proved quite confusing.
+By adjusting to 
+		cPtr = argv[i];
+I was able to access the entire argument.
+
+
+- Issue: Input error checking required
+
+It was quite a struggle to figure out how to make sure the program 
+recognized silly input like "12three4".  It turned out that cPtr
+could be set equal to a cell of the array argv[] (which was a string)
+and then the string could be traversed by using the index i and
+the array cPtr[i].
+
+
+- Issue: * is a special key
+
+Creating the calculator went smoothly except for the 
+multiplication operator.  The character '*' has a special
+function that causes it to be unusable in its simple form.
+This is discussed more in answer to question d).
+
+
+a) What is the first argument?
+	The first argument is always the file name and location.
+For this it was "./part1".
+
+b) What is the last argument?
+The last argument is the last one I passed, which varies from execution
+to execution.
+
+c) What happens when the argument to one or both of these is of
+the wrong type, e.g., two instead of 2?
+	While code with weaker error handling would not be able
+to properly execute the conversion if provided an awkward argument
+such as "two", this Part 3 program knows not to accept anthing other
+than numeric characters for an int and nothing other that numeric 
+characters and a decimal point for a float.
+
+D) Does your program work for all the standard mathematical oper-
+ators?
+	The Part 4 program does not work for all the standard mathematical
+operators.  The opertator for multiplication (the '*' character) has a
+special purpose for arguments.  It indicates that all of something be
+included.  In the case of ./part4 12 * 10, all the other files at the location
+./ are passed as arguments, which produces an error.

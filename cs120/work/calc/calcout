@@ -1,0 +1,120 @@
+Script started on Fri 27 Sep 2013 08:54:20 AM PDT
+[?1034hbash-4.1$ ./calc.out
+
+
+Simple Calculator
+
+Created by: Jonathan Hanson
+Sept 24, 2013
+This program uses functions and a simple, menu-based
+format to make basic math operations easy and fun.
+Input the integer labels in the menu to navigate, and
+input floating point numbers or integers as operands.
+
+Add (1)
+Subtract (2)
+Divide (3)
+Minimum (4)
+Cartesian Distance (5)
+Random Number (6)
+Sine (7)
+Volume of Cylinder (8)
+Exit (0)
+Enter your choice: 1
+
+Addition Calculator
+Enter a value: 58
+Enter a value: 32
+
+58 + 32 = 90
+
+Add (1)
+Subtract (2)
+Divide (3)
+Minimum (4)
+Cartesian Distance (5)
+Random Number (6)
+Sine (7)
+Volume of Cylinder (8)
+Exit (0)
+Enter your choice: 5
+
+Cartesian Distance
+Enter a value: 0
+Enter a value: 0
+Enter a value: 6
+Enter a value: 8
+
+Cartesian distance of 0, 0 and 6, 8 = 10
+
+Add (1)
+Subtract (2)
+Divide (3)
+Minimum (4)
+Cartesian Distance (5)
+Random Number (6)
+Sine (7)
+Volume of Cylinder (8)
+Exit (0)
+Enter your choice: 6
+
+Random Number
+Enter a value: 100   -15
+Error: Please input positive value
+Enter a value: 100
+
+Random number between 0 and 100 = 24
+
+Add (1)
+Subtract (2)
+Divide (3)
+Minimum (4)
+Cartesian Distance (5)
+Random Number (6)
+Sine (7)
+Volume of Cylinder (8)
+Exit (0)
+Enter your choice: 7
+
+Sine
+Enter a value: 30
+
+Sine of 30 = 0.5
+
+Add (1)
+Subtract (2)
+Divide (3)
+Minimum (4)
+Cartesian Distance (5)
+Random Number (6)
+Sine (7)
+Volume of Cylinder (8)
+Exit (0)
+Enter your choice: 8
+
+Volume of Cylinder
+Enter a value: -3
+Enter a value: 4
+Error: Input positive values
+Enter a value: 5
+Enter a value: 8
+
+Volume of cylinder with radius and height 5 and 8 = 628.318
+
+Add (1)
+Subtract (2)
+Divide (3)
+Minimum (4)
+Cartesian Distance (5)
+Random Number (6)
+Sine (7)
+Volume of Cylinder (8)
+Exit (0)
+Enter your choice: 0
+
+Goodbye!
+
+bash-4.1$ exit
+exit
+
+Script done on Fri 27 Sep 2013 08:55:49 AM PDT

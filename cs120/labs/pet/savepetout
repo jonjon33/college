@@ -1,0 +1,235 @@
+Script started on Tue 15 Oct 2013 11:53:51 AM PDT
+[?1034hbash-4.1$ ./spet.out
+
+Pet Simulator
+
+ New Game (1)
+ Load Game (2)
+1
+Choose a name for your pet (one word): George
+
+Your pet George is 
+Happy: 50
+Hungry: 50
+What would you like to do with your pet?
+ Play (1) 
+ Feed (2) 
+ Save (3) 
+ Exit (0) 
+1
+
+What should we play?
+ Fetch (1) 
+ Roll over (2) 
+ Peek-a-Boo (3) 
+ Main Menu (0) 
+2
+
+Weeeeee!
+
+Your pet George is 
+Happy: 55
+Hungry: 51
+What would you like to do with your pet?
+ Play (1) 
+ Feed (2) 
+ Save (3) 
+ Exit (0) 
+2
+
+What will you feed me?
+ Generic Pet Food (1) 
+ Fancy Pet Food (2) 
+ Main Menu (0) 
+1
+
+It's better than starving, I guess.
+
+Your pet George is 
+Happy: 55
+Hungry: 49
+What would you like to do with your pet?
+ Play (1) 
+ Feed (2) 
+ Save (3) 
+ Exit (0) 
+3
+
+Your pet George is 
+Happy: 55
+Hungry: 49
+What would you like to do with your pet?
+ Play (1) 
+ Feed (2) 
+ Save (3) 
+ Exit (0) 
+0
+
+Would you like to save this pet? (y/n) n
+
+Goodbye!
+
+bash-4.1$ ./spet.out
+
+Pet Simulator
+
+ New Game (1)
+ Load Game (2)
+2
+
+What was the name of your pet? George
+
+Your pet George is 
+Happy: 55
+Hungry: 49
+What would you like to do with your pet?
+ Play (1) 
+ Feed (2) 
+ Save (3) 
+ Exit (0) 
+1
+
+What should we play?
+ Fetch (1) 
+ Roll over (2) 
+ Peek-a-Boo (3) 
+ Main Menu (0) 
+1
+
+I sure love fetch, but now I'm tired!
+
+Your pet George is 
+Happy: 65
+Hungry: 54
+What would you like to do with your pet?
+ Play (1) 
+ Feed (2) 
+ Save (3) 
+ Exit (0) 
+0
+
+Would you like to save this pet? (y/n) y
+Saved!
+
+Goodbye!
+
+bash-4.1$ ./spet.cpp[K[K[Kot[Kut
+
+Pet Simulator
+
+ New Game (1)
+ Load Game (2)
+2
+
+What was the name of your pet? Geoe rge
+
+Your pet George is 
+Happy: 65
+Hungry: 54
+What would you like to do with your pet?
+ Play (1) 
+ Feed (2) 
+ Save (3) 
+ Exit (0) 
+0
+
+Would you like to save this pet? (y/n) n
+
+Goodbye!
+
+bash-4.1$ ./spet.out
+
+Pet Simulator
+
+ New Game (1)
+ Load Game (2)
+2
+
+What was the name of your pet? Cathy
+
+Your pet Cathy is 
+Happy: 80
+Hungry: 0
+What would you like to do with your pet?
+ Play (1) 
+ Feed (2) 
+ Save (3) 
+ Exit (0) 
+2
+
+What will you feed me?
+ Generic Pet Food (1) 
+ Fancy Pet Food (2) 
+ Main Menu (0) 
+2
+
+But I'm FULL.
+
+Your pet Cathy is 
+Happy: 80
+Hungry: 0
+What would you like to do with your pet?
+ Play (1) 
+ Feed (2) 
+ Save (3) 
+ Exit (0) 
+0
+
+Would you like to save this pet? (y/n) n
+
+Goodbye!
+
+bash-4.1$ ./spet.out
+
+Pet Simulator
+
+ New Game (1)
+ Load Game (2)
+2
+
+What was the name of your pet? Red
+
+Your pet Red is 
+Happy: 100
+Hungry: 95
+What would you like to do with your pet?
+ Play (1) 
+ Feed (2) 
+ Save (3) 
+ Exit (0) 
+1
+
+What should we play?
+ Fetch (1) 
+ Roll over (2) 
+ Peek-a-Boo (3) 
+ Main Menu (0) 
+3
+
+I couldn't possibly be any happier!
+
+Your pet Red is 
+Happy: 100
+Hungry: 97
+What would you like to do with your pet?
+ Play (1) 
+ Feed (2) 
+ Save (3) 
+ Exit (0) 
+1
+
+What should we play?
+ Fetch (1) 
+ Roll over (2) 
+ Peek-a-Boo (3) 
+ Main Menu (0) 
+1
+
+I couldn't possibly be any happier!
+
+Your pet has starved.
+
+bash-4.1$ exit
+exit
+
+Script done on Tue 15 Oct 2013 11:55:48 AM PDT

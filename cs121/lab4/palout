@@ -1,0 +1,45 @@
+Script started on Wed 01 Oct 2014 09:52:08 AM PDT
+[?1034hbash-4.1$ ./palindrome 
+
+Palindrome Checker   rekcehC emordnilaP
+Enter a word or phrase: 
+As I pee, Sir, I see Pisa
+
+"As I pee, Sir, I see Pisa" is a palindrome
+
+bash-4.1$ ./palindrome
+
+Palindrome Checker   rekcehC emordnilaP
+Enter a word or phrase: 
+A Santa dog lived as a devil God at NASA
+
+"A Santa dog lived as a devil God at NASA" is a palindrome
+
+bash-4.1$ ./palindrome 
+
+Palindrome Checker   rekcehC emordnilaP
+Enter a word or phrase: 
+This is not a palindrome
+
+"This is not a palindrome" is not a palindrome
+
+bash-4.1$ ./palindrome 
+
+Palindrome Checker   rekcehC emordnilaP
+Enter a word or phrase: 
+Race Car
+
+"Race Car" is a palindrome
+
+bash-4.1$ ./palindrome
+
+Palindrome Checker   rekcehC emordnilaP
+Enter a word or phrase: 
+Your mother
+
+"Your mother" is not a palindrome
+
+bash-4.1$ exit
+exit
+
+Script done on Wed 01 Oct 2014 09:53:36 AM PDT

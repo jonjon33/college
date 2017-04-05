@@ -1,0 +1,2 @@
+7 -2 ? Ducklings slow you down, go back 2 squares.
+4 +1 * A tailwind blows you ahead 1 square.

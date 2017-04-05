@@ -1,0 +1,37 @@
+Jonathan Hanson
+November 20, 2014
+CS 121
+Lab 11 Programming Log
+
+Overview
+This lab involved manipulating generic hash table code to contain a set of
+words. The requested data of bucket loading statistics and example searchs
+are provided in the lab11out files.
+
+Programming Log
+The largest issue that was faced in this lab was proper implementation of
+strings. The initial efforts to use pointers to arrays of char led to
+vague errors, and so the cstring library was included to greatly simplify
+the code.
+
+The other issue stemmed from proper filestream implementation. The syntax
+of the getline() function and the ifstream's '>>' operation required
+review of previous code. Eventually, the getline() function proved to be
+the simplest and most elegant solution for inputing a word at a time and
+inserting it into the table.
+
+None of the other manipulations posed any serious resistance. Creating a
+function to search the list was straight forward, as was ammending the
+PrintHashTable() function to provide bucket statistics.
+
+Changing the size of the hashtable showed that the bucket loading, and
+thus the required instances of list traversal, could be reduced
+significantly. However, this lab did not request an attempt at a more
+ideal loading factor.  The most effective loading factor attempted was
+1.17 (table size 50031), which guarantees that the Big Oh will not 
+reach the ideal level of O( 1 ).  While a more ideal loading factor
+would be around 500000 buckets, this would require a significantly
+larger amount of time to process. Even the 50031 had a noticable wait
+time as the program ran, so printing a 500000 item table would be a
+hassle. However, such a loading factor (closer to 0.1) would make
+searching the table a breeze.
